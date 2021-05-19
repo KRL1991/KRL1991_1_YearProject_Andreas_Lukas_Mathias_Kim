@@ -1,4 +1,4 @@
-#Procedure for at lave en branch
+## Procedure for at lave en branch
 
 * For at lave en ny branch skal du gå ind på det repository hvor du ville lave en ny branch
 
