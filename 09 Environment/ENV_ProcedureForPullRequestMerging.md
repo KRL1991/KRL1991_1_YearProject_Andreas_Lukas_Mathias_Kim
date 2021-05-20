@@ -26,7 +26,7 @@ Beskrivelse:
 ![image](https://user-images.githubusercontent.com/70881764/118829471-70298b80-b8be-11eb-9912-c52b46b2ee44.png)
 
 
-6.Tryk på merge pull request og slet herefter branchen:
+6.Tryk på merge pull request og slet herefter branchen.
 
 
 
