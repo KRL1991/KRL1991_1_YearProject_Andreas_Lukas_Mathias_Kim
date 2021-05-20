@@ -4,7 +4,7 @@
 Domain Model = DM
 format visio
 
-## Requirements: REQ_UCD02_navn
+## Requirements:
 Use Case Diagram = UCD
 Format: Visio
 Visions Document = VD
