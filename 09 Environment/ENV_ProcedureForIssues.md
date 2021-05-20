@@ -26,3 +26,13 @@
   
   
   ### Igennem Projects
+  
+  
+  * Gå ind på det project, hvor du ville tilføjt et issue til.
+  
+  * Tryk på plus ikonet i To Do
+  
+  * Giv noten et passende navn
+  
+  * Derefter klik på de 3 dots "..." i hjørnet af noten og klik på "Convert to issue"
+  
