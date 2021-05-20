@@ -16,7 +16,7 @@ Beskrivelse:
 ![image](https://user-images.githubusercontent.com/70881764/118829333-525c2680-b8be-11eb-9ff3-bc0f46320770.png)
 
 
-4.Skriv en kommentar hvor du beder om ændringer eller skriver at alt er ok og at mergen godkendes:
+4.Skriv en kommentar, hvor du beder om ændringer, eller skriver at alt er ok og at mergen godkendes:
 
 ![image](https://user-images.githubusercontent.com/70881764/118829441-6b64d780-b8be-11eb-83c4-cb38b377f7d3.png)
 
