@@ -46,12 +46,12 @@ Det vigtige er at få indsamlet data i gruppen. Efter mødet kan vi komme videre
 Mødeleder: Kim & Lukas
 
 ## Testcase Bestil en væg
-
+(med et klik)
 Din opgave er at bestille en 2 fags væg med 8 glas
 
 
 ## Testcase Redigere i bredde og Højde
-
+(med 2 klik)
 målene skal redigeres til 82 til 212 cm
 
 ## Testcase Vælg tillæg
