@@ -5,6 +5,7 @@
 Contains artifacts related to business analysis:
   
 - DomainModel
+  Format: Visio
 
  
 </p>
@@ -35,7 +36,15 @@ Contains artifacts relating to the requirements of the project:
   
 Contains artifacts explaining the analysis structure of the project:
 
--
+- Use Case = UC
+  Format:Visio
+
+- Activity Diagram = AD
+  Format visio
+  
+- System Sequence Diagram = SSD
+  Format visio
+
 </p>
 </details>
 
@@ -60,7 +69,9 @@ Contains artifacts explaining the analysis structure of the project:
   
 Contain the program implementation of the product:
 - Model Folder
+
 - Persistence Folder
+
 - View Folder
 
 </p>
