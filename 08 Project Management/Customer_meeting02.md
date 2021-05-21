@@ -41,9 +41,29 @@ New-Yorker.dk
 ## Mødets forløb:
 Vi presentere kunden for vores mockup og tager detaljeret noter omkring deres feedback til viderudvikling.
 
+Det vigtige er at få indsamlet data i gruppen. Efter mødet kan vi komme videre med projektet. 
+
 Mødeleder: Kim & Lukas
 
-Det vigtige er at få indsamlet data i gruppen. Efter mødet kan vi komme videre med projektet. 
+## Testcase Bestil en væg
+
+Din opgave er at bestille en 2 fags væg med 8 glas
+
+
+## Testcase Redigere i bredde og Højde
+
+målene skal redigeres til 82 til 212 cm
+
+## Testcase Vælg tillæg
+
+Vælg Levering
+
+## Testcase Vælg en forhandler
+
+Vælg XL-Byg
+## Testcase Send forespørgsel
+
+Send forespørgsel
 
 <br/>
 
