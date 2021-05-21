@@ -4,15 +4,8 @@
   
 Contains artifacts related to business analysis:
   
-- Vision document
-- FURPS+
-- Use Case Model 
-- Analysis Model 
-- Target- Organization Assessment 
-- Business Rules 
-- Supplementary Business Specifications 
-- Business Glossary 
-- Business Architecture Document 
+- DomainModel
+
  
 </p>
 </details>
@@ -22,30 +15,48 @@ Contains artifacts related to business analysis:
   
 Contains artifacts relating to the requirements of the project:
 
-- Use Case + number + name of usecase
-- Use Case diagrams 
-- Class diagrams    
-- Activity diagrams 
-- Domain models 
-- System diagrams 
-- System Sequence diagrams 
-- Requirements Management Plan 
-
-</p>
-</details>
-
-<details><summary><strong>03 Design</strong></summary> <p>
+- Use Case Diagram
+  Format: Visio
   
-Contains artifacts explaining the design structure of the project:
+- Visions Document
+  Format: Docs
+  
+- FURPS+
+  Format: Docs
+  
+- Business Glossary
+  wiki github
 
-- Class Diagrams
-- Design Model 
-- Software Architecture Document 
 
 </p>
 </details>
 
-<details><summary><strong>04 Implementation</strong></summary> <p>
+<details><summary><strong>03 Analysis</strong></summary> <p>
+  
+Contains artifacts explaining the analysis structure of the project:
+
+-
+</p>
+</details>
+
+
+<details><summary><strong>04 Design</strong></summary> <p>
+  
+ Contains artifacts explaining the design structure of the project:
+
+- Operation Contracts
+  Format: Visio
+  
+- System Diagram
+  Format: Visio
+  
+- Mockups
+
+
+</p>
+</details>
+
+<details><summary><strong>05 Implementation</strong></summary> <p>
   
 Contain the program implementation of the product:
 - Model Folder
@@ -55,7 +66,7 @@ Contain the program implementation of the product:
 </p>
 </details>
 
-<details><summary><strong>05 Test</strong></summary> <p>
+<details><summary><strong>06 Test</strong></summary> <p>
   
 Contain artifacts related to product tests:
   
@@ -67,7 +78,7 @@ Contain artifacts related to product tests:
 </p> 
 </details>
 
-<details><summary><strong>06 Deployment</strong></summary> <p>
+<details><summary><strong>07 Deployment</strong></summary> <p>
   
 Contains documents related to the deployment: 
 
@@ -80,7 +91,7 @@ Contains documents related to the deployment:
 </details>
 
 
-<details><summary><strong>07 Configuration & CM</strong></summary> <p>
+<details><summary><strong>08 Configuration & CM</strong></summary> <p>
   
 Contains Configuration & CM artifacts: 
 
@@ -91,12 +102,10 @@ Contains Configuration & CM artifacts:
 </details>
 
 
-<details><summary><strong>08 Project Management</strong></summary> <p>
+<details><summary><strong>09 Project Management</strong></summary> <p>
   
 Contains artifacts relating to administation and customer feedback:
 
-- Time tables
-- Customer meeting notes
 
 </p>
 </details>
