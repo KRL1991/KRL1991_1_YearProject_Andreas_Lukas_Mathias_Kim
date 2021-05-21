@@ -1,6 +1,8 @@
 # Planlægning af kundemøde 2
 
-**Hvem er vores kunde?:** New-Yorker.dk
+**Hvem er vores kunde?:** 
+
+New-Yorker.dk
 
 ## Tiderne
 **Hvornår starter mødet?:** 13:00
@@ -10,9 +12,11 @@
 **Zoom-link:** https://zealand.zoom.us/j/4550762682
 
 ## Hvilke mål har vi for mødet?:
-1. Byd kunden velkommen og tak dem for deres tid
-2. Afslut mødet med god stemning og afklaring fra begge parter
-3. Remse op hvad kunden ønsker, så der ikke er nogen tvivl
+1. Byd kunden velkommen og tak dem for deres tid.
+2. Få deres feedback til vores mockup.
+3. Remse op hvad kundene evt. ønsker ændret, så der ikke er nogen tvivl om fremadrettede features.
+4. Afslut mødet med god stemning og afklaring fra begge parter.
+
 
 ## Mulige udfordringer:
 1. Zoom crasher
