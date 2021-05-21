@@ -58,9 +58,10 @@ målene skal redigeres til 82 til 212 cm
 
 Vælg Levering
 
-## Testcase Vælg en forhandler
+## Testcase Gå til forespørgsel og vælg en forhandler
 
 Vælg XL-Byg
+
 ## Testcase Send forespørgsel
 
 Send forespørgsel
