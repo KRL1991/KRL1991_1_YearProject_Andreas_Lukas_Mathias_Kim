@@ -1,6 +1,6 @@
   ## Procedure for issues
   
-  Der er to måder og lave et issue på.
+  Der er to måder at lave et issue på.
   
   ### Igennem Issues
   
@@ -16,7 +16,7 @@
 ![image](https://user-images.githubusercontent.com/71014091/118882638-b00b6580-b8f4-11eb-91c8-df6234797b00.png)
 
 
-  •	Giv en god title som har noget med issuet at gøre.
+  •	Giv en god title, som har noget med issuet at gøre.
   
   •	**HUSK** at tilføje issuet til det projekt du arbejder med.
   
@@ -30,9 +30,9 @@
   
   * Gå ind på det project, hvor du ville tilføjt et issue til.
   
-  * Tryk på plus ikonet i To Do
+  * Tryk på plus ikonet i To Do.
   
-  * Giv noten et passende navn
+  * Giv noten et passende navn.
   
-  * Derefter klik på de 3 dots "..." i hjørnet af noten og klik på "Convert to issue"
+  * Derefter klik på de 3 dots "..." i hjørnet af noten og klik på "Convert to issue".
   
