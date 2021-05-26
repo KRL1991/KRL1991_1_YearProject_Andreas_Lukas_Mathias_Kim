@@ -2,7 +2,6 @@
 
 
 ### Step 1.
-
 * Klik på den grønne boks "Code", hvor der også er en drop down pil.
 
 ![image](https://user-images.githubusercontent.com/56455491/119619826-ad34d700-be04-11eb-9d66-4d49912771e1.png)
@@ -26,7 +25,6 @@
 
 
 ### Step 4.
-
 * Til sidst trykker du på "Clone", hvorefter Android Studioes klare resten.
 
 ![image](https://user-images.githubusercontent.com/56455491/119620995-e6217b80-be05-11eb-889c-d0b6f2168ff3.png)
