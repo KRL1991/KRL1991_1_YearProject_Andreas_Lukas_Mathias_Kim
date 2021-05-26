@@ -28,7 +28,7 @@
   ### Igennem Projects
   
   
-  * Gå ind på det project, hvor du ville tilføjt et issue til.
+  * Gå ind på det project, hvor du ville tilføje et issue til.
   
   * Tryk på plus ikonet i To Do.
   
