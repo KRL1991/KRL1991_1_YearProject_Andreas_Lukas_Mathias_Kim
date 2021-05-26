@@ -1,5 +1,6 @@
 # Procedure for at klone projektet.
 
+
 ### Step 1.
 
 * Klik på den grønne boks "Code", hvor der også er en drop down pil.
@@ -22,6 +23,7 @@
 * Her kopier du linket fra GitHub ind i URL, hvorefter du trykker på "Clone".
 
 ![image](https://user-images.githubusercontent.com/56455491/119620288-1e748a00-be05-11eb-9296-781c447af496.png)
+
 
 ### Step 4.
 
