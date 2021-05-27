@@ -16,6 +16,7 @@ public class Catalog extends AppCompatActivity { //Mathias
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_katalog);
         ImageView image1 = findViewById(R.id.fag1med4glas);
        // Intent i = new Intent(Catalog.this,MainActivity.class);
 
