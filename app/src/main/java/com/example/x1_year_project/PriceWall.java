@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ChosenWall extends AppCompatActivity {
+public class PriceWall extends AppCompatActivity {
 
     //Written by Kim
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chosen_wall);
+        setContentView(R.layout.activity_price_wall);
 
-        Button goToPrice = findViewById(R.id.ChosenWallButton);
+        Button goToInfoSite = findViewById(R.id.PriceWallButton);
 
-        goToPrice.setOnClickListener(new View.OnClickListener() {
+        goToInfoSite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChosenWall.this,PriceWall.class);
+                Intent intent = new Intent(PriceWall.this,InfoSite.class);
                 startActivity(intent);
             }
         });
