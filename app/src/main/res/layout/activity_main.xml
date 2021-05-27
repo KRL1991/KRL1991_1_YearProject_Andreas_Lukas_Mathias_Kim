@@ -12,7 +12,7 @@
         android:layout_width="195dp"
         android:layout_height="67dp"
         android:layout_marginTop="172dp"
-        android:text="Button"
+        android:text="Katalog"
         app:backgroundTint="#BF8E55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="195dp"
         android:layout_height="67dp"
         android:layout_marginTop="312dp"
-        android:text="Button"
+        android:text="Inspiration"
         app:backgroundTint="#BF8E55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,10 +34,20 @@
         android:layout_width="195dp"
         android:layout_height="67dp"
         android:layout_marginTop="468dp"
-        android:text="Button"
+        android:text="Om os"
         app:backgroundTint="#BF8E55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/first" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
