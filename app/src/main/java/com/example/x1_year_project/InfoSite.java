@@ -13,14 +13,5 @@ public class InfoSite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_site);
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-        @Override
-        public void run() {
-            Intent intent=new Intent(InfoSite.this,MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    },0);
         }
 }
