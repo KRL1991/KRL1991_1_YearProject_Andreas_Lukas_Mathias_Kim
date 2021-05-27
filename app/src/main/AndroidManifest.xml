@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KRL1991_1_YearProject_Andreas_Lukas_Mathias_Kim">
-
         <activity android:name=".AboutUs"
             android:label="Om os"/>
+        <activity android:name=".ChosenWall"></activity>
         <activity android:name=".Inspiration" />
         <activity android:name=".Catalog" />
         <activity
