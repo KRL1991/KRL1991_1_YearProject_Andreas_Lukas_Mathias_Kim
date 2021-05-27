@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Catalog"
+
+    >
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+         >
+
+            <ImageView
+                android:id="@+id/fag1med4glas"
+                android:layout_width="267dp"
+                android:layout_height="329dp"
+                android:clickable="true"
+                android:cropToPadding="false"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag1_glas4" />
+
+            <ImageView
+                android:id="@+id/fag2med8glas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag2_glas8" />
+
+            <ImageView
+                android:id="@+id/fag2med6glas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag2_glas6" />
+
+            <ImageView
+                android:id="@+id/dormed6glas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/glas6_dor" />
+
+            <ImageView
+                android:id="@+id/doubledor_glas12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/doubledor_glas12" />
+
+            <ImageView
+                android:id="@+id/skydedor_glas6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/skydedor_6glas" />
+
+            <ImageView
+                android:id="@+id/fag3med12glas_enkeldor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag3_glas12_med_enkeldor" />
+
+            <ImageView
+                android:id="@+id/fag4med16glas_doubledor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag4_glas16_med_doubledor" />
+
+            <ImageView
+                android:id="@+id/fag5med20glas_enkeldor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag5_glas20_med_enkeldor" />
+
+            <ImageView
+                android:id="@+id/fag6med24glass_enkeldor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/fag6_glas24_med_enkeldor" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

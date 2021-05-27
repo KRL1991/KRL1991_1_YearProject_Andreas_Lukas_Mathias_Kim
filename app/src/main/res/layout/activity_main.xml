@@ -4,4 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btncatalog"
+        android:layout_width="195dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="172dp"
+        android:text="Katalog"
+        app:backgroundTint="#BF8E55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btninspiration"
+        android:layout_width="195dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="312dp"
+        android:text="Inspiration"
+        app:backgroundTint="#BF8E55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnaboutus"
+        android:layout_width="195dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="468dp"
+        android:text="Om os"
+        app:backgroundTint="#BF8E55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/first" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
