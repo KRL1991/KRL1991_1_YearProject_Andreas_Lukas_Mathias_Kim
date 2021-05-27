@@ -13,7 +13,9 @@
         <activity android:name=".InfoSite"></activity>
         <activity android:name=".AboutUs"
             android:label="Om os"/>
-        <activity android:name=".ChosenWall"></activity>
+        <activity
+            android:name=".ChosenWall"
+            android:label="Angiv Mål" />
         <activity android:name=".Inspiration" />
         <activity android:name=".Catalog" />
 

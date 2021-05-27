@@ -8,7 +8,7 @@
     tools:context=".AboutUs">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ImageViewChosenWall"
         android:layout_width="191dp"
         android:layout_height="104dp"
         app:layout_constraintBottom_toBottomOf="parent"
