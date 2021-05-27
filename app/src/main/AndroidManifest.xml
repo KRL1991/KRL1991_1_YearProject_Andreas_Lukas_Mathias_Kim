@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KRL1991_1_YearProject_Andreas_Lukas_Mathias_Kim">
-        <activity android:name=".Inspiration"></activity>
-        <activity android:name=".Catalog"></activity>
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".Inspiration" />
+        <activity android:name=".Catalog" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">

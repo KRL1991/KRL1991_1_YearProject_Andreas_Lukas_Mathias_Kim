@@ -30,13 +30,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnaboutus"
         android:layout_width="195dp"
         android:layout_height="67dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="468dp"
         android:text="Button"
+        app:backgroundTint="#BF8E55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btninspiration" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
