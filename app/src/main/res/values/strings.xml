@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">New-Yorker.dk</string>
     <string name="logo">Logo</string>
+    <string name="url_https_www_instagram_com_newyorkerdk_hl_da">URL: https://www.instagram.com/newyorkerdk/?hl=da</string>
 </resources>
