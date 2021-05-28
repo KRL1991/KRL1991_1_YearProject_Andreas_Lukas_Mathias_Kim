@@ -8,7 +8,7 @@
     tools:context=".Confirmation">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ConfirmationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
@@ -24,7 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="236dp"
-        android:text="Tak for din forespørgsel. Vi vender tilbage på din henvendelse snarest muligt."
+        android:gravity="center"
+        android:text="Tak for din forespørgsel. \n Vi vender tilbage på din henvendelse snarest muligt."
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
