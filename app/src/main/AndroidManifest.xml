@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KRL1991_1_YearProject_Andreas_Lukas_Mathias_Kim">
-        <activity android:name=".Confirmation"></activity>
-        <activity android:name=".PriceWall" />
-        <activity android:name=".InfoSite" />
+        <activity android:name=".Confirmation"
+            android:label="Bekræftelse"/>
+        <activity android:name=".PriceWall"
+            android:label="Pris"/>
+        <activity android:name=".InfoSite"
+            android:label="Kontakt Information"/>
         <activity
             android:name=".AboutUs"
             android:label="Om os" />
         <activity
             android:name=".ChosenWall"
             android:label="Angiv Mål" />
-        <activity android:name=".Inspiration" />
-        <activity android:name=".Catalog" />
+        <activity android:name=".Inspiration"
+            android:label="Inspiration"/>
+        <activity android:name=".Catalog"
+            android:label="Katalog"/>
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
