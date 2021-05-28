@@ -9,13 +9,11 @@
     >
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
         android:background="#000000"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -24,17 +22,18 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
             android:orientation="vertical"
-         >
+            android:paddingVertical="50dp">
 
             <ImageView
                 android:id="@+id/fag1med4glas"
-                android:layout_width="267dp"
-                android:layout_height="329dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:clickable="true"
-                android:cropToPadding="false"
+               android:paddingHorizontal="10dp"
                 android:focusable="true"
                 app:srcCompat="@drawable/fag1_glas4" />
 
