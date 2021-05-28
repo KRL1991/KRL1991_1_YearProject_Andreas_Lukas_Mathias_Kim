@@ -19,7 +19,7 @@ public class Confirmation extends AppCompatActivity {
         goHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Confirmation.this,MainActivity.class);
+                Intent intent = new Intent(Confirmation.this, StartScreen.class);
                 startActivity(intent);
             }
         });
