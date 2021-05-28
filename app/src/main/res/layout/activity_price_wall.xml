@@ -5,25 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".PriceWall">
-
-    <TextView
-        android:id="@+id/PriceWallPriceTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
-        android:text="Price"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent" />
+    tools:context=".ListOfChosenItems">
 
     <Button
         android:id="@+id/PriceWallButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
+        android:layout_marginBottom="75dp"
         android:text="Gå til Forespørgsel"
         app:backgroundTint="#BF8E55"
         app:layout_constraintBottom_toBottomOf="parent"

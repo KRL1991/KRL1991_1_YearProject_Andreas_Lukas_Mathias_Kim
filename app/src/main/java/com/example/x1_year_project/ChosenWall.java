@@ -20,7 +20,7 @@ public class ChosenWall extends AppCompatActivity {
         goToPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChosenWall.this,PriceWall.class);
+                Intent intent = new Intent(ChosenWall.this, ListOfChosenItems.class);
                 startActivity(intent);
             }
         });

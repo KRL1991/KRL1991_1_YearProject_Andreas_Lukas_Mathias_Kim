@@ -11,8 +11,8 @@
         android:theme="@style/Theme.KRL1991_1_YearProject_Andreas_Lukas_Mathias_Kim">
         <activity android:name=".Confirmation"
             android:label="Bekræftelse"/>
-        <activity android:name=".PriceWall"
-            android:label="Pris"/>
+        <activity android:name=".ListOfChosenItems"
+            android:label="Kurv"/>
         <activity android:name=".InfoSite"
             android:label="Kontakt Information"/>
         <activity
