@@ -15,7 +15,7 @@ public class ChosenWall extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chosen_wall);
 
-        Button goToPrice = findViewById(R.id.ChosenWallButton);
+        Button goToPrice = findViewById(R.id.InfoSite);
 
         goToPrice.setOnClickListener(new View.OnClickListener() {
             @Override

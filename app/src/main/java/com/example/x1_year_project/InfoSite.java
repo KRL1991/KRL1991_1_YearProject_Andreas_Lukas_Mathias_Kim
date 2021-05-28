@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 
 public class InfoSite extends AppCompatActivity {
 
@@ -13,5 +15,18 @@ public class InfoSite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_site);
 
-        }
+
+
+    Button btn = (Button) findViewById(R.id.InfoSite);
+
+        btn.setOnClickListener(new View.OnClickListener()
+
+    {
+        @Override
+        public void onClick (View v){
+        Intent i = new Intent(InfoSite.this, Confirmation.class);
+        startActivity(i);
+    }
+    });
+}
 }

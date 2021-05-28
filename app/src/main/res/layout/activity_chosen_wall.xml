@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.568" />
 
     <Button
-        android:id="@+id/ChosenWallButton"
+        android:id="@+id/InfoSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"
