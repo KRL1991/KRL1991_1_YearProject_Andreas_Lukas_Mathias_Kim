@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".StartScreen"
             android:label="Hjem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

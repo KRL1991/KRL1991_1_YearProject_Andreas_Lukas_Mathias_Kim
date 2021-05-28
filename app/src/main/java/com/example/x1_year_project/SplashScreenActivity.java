@@ -26,7 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 // Here a new Intent is created which takes ud from splashscreen to MainActivity.
                 // Finnish is added to make sure that you cant use the back button on the phone
                 // to return to the splashscreen.
-                Intent intent=new Intent(SplashScreenActivity.this,MainActivity.class);
+                Intent intent=new Intent(SplashScreenActivity.this, StartScreen.class);
                 startActivity(intent);
                 finish();
             }
