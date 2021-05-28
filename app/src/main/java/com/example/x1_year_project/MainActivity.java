@@ -28,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
     button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, Catalog.class);
-            startActivity(intent);
+            startActivity(new Intent(MainActivity.this, Catalog.class));
         }
     });
 
@@ -37,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
     button1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, Inspiration.class);
-            startActivity(intent);
+          startActivity(new Intent(MainActivity.this, Inspiration.class));
         }
     });
 
@@ -46,10 +44,18 @@ public class MainActivity extends AppCompatActivity {
     button2.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, AboutUs.class);
-            startActivity(intent);
+            startActivity(new Intent(MainActivity.this, AboutUs.class));
         }
     });
 
     }
 }
+/*
+- Andreas Ravn
+Alternetive code:
+    public void onClick(View v) {
+            Intent intent = new Intent (MainActivity.this, Button.class));
+            startActivity(intent);
+        }
+    });
+ */
