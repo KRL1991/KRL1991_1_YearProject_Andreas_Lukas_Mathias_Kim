@@ -15,7 +15,7 @@ public class ListOfChosenItems extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_price_wall);
 
-        Button goToInfoSite = findViewById(R.id.PriceWallButton);
+        Button goToInfoSite = findViewById(R.id.ListOfChosenItemsButton);
 
         goToInfoSite.setOnClickListener(new View.OnClickListener() {
             @Override
