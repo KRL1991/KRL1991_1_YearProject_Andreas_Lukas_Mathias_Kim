@@ -26,10 +26,10 @@ public class ChosenWall extends AppCompatActivity {
 
         Button goToPrice = findViewById(R.id.ChosenWallButton);
 
-        Spinner extras = findViewById(R.id.ChosenWallSpinner);
+        /*Spinner extras = findViewById(R.id.ChosenWallSpinner);
         String [] items = new String[] {"Vælg tilvalg","Hello","Hello2","Hello3"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,items);
-        extras.setAdapter(adapter);
+        extras.setAdapter(adapter);*/
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
 
