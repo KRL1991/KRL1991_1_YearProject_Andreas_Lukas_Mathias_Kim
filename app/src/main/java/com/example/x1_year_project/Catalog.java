@@ -9,97 +9,102 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Catalog extends AppCompatActivity { //Mathias
+public class Catalog extends AppCompatActivity implements View.OnClickListener {
 
-    // ImageView image1,image2,image3,image4,image5,image6,image7,image8,iamge9,image10;
+    ImageView  skydedor_6glas,doubledor_glas12,fag1_glas4,fag2_glas6,fag2_glas8,
+            fag3_glas12_med_enkledor,fag4_glas16_med_doubledor,fag5_glas20_med_enkledor,
+            fag6_glas24_med_enkledor,glas6_dor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_katalog);
 
-        ImageView image1 = findViewById(R.id.fag1med4glas);
-        ImageView image2 = findViewById(R.id.fag2med8glas);
-        ImageView image3 = findViewById(R.id.fag2med6glas);
-        ImageView image4 = findViewById(R.id.dormed6glas);
-        ImageView image5 = findViewById(R.id.doubledor_glas12);
-        ImageView image6 = findViewById(R.id.skydedor_glas6);
-        ImageView image7 = findViewById(R.id.fag3med12glas_enkeldor);
-        ImageView image8 = findViewById(R.id.fag4med16glas_doubledor);
-        ImageView image9 = findViewById(R.id.fag5med20glas_enkeldor);
-        ImageView image10 = findViewById(R.id.fag6med24glass_enkeldor);
 
-    image1.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(Catalog.this,ChosenWall.class);
-            startActivity(i);
+        fag1_glas4 = (ImageView) findViewById(R.id.fag1med4glas);
+        fag2_glas6 = (ImageView) findViewById(R.id.fag2med6glas);
+        fag2_glas8 = (ImageView) findViewById(R.id.fag2med8glas);
+        fag3_glas12_med_enkledor = (ImageView) findViewById(R.id.fag3med12glas_enkeldor);
+        fag4_glas16_med_doubledor = (ImageView) findViewById(R.id.fag4med16glas_doubledor);
+        fag5_glas20_med_enkledor = (ImageView) findViewById(R.id.fag5med20glas_enkeldor);
+        fag6_glas24_med_enkledor = (ImageView) findViewById(R.id.fag6med24glass_enkeldor);
+        glas6_dor = (ImageView) findViewById(R.id.dormed6glas);
+        doubledor_glas12 = (ImageView) findViewById(R.id.doubledor_glas12);
+        skydedor_6glas = (ImageView) findViewById(R.id.skydedor_glas6);
 
+        fag1_glas4.setOnClickListener(this);
+        fag2_glas6.setOnClickListener(this);
+        fag2_glas8.setOnClickListener(this);
+        fag3_glas12_med_enkledor.setOnClickListener(this);
+        fag4_glas16_med_doubledor.setOnClickListener(this);
+        fag5_glas20_med_enkledor.setOnClickListener(this);
+        fag6_glas24_med_enkledor.setOnClickListener(this);
+        glas6_dor.setOnClickListener(this);
+        doubledor_glas12.setOnClickListener(this);
+        skydedor_6glas.setOnClickListener(this);
+
+
+    }
+    @Override
+    public void onClick(View view) {
+        Intent ChosenWall = new Intent(Catalog.this, ChosenWall.class);
+
+        switch (view.getId()) {
+
+            case R.id.fag1med4glas:
+                ChosenWall.putExtra("name", "picture1");
+
+                startActivity(ChosenWall);
+                break;
+
+            case R.id.fag2med6glas:
+                ChosenWall.putExtra("name", "picture2");
+
+                startActivity(ChosenWall);
+                break;
+
+            case R.id.fag2med8glas:
+                ChosenWall.putExtra("name", "picture3");
+
+                startActivity(ChosenWall);
+
+                break;
+            case R.id.fag3med12glas_enkeldor:
+                ChosenWall.putExtra("name", "picture4");
+
+                startActivity(ChosenWall);
+                break;
+            case R.id.fag4med16glas_doubledor:
+                ChosenWall.putExtra("name", "picture5");
+
+                startActivity(ChosenWall);
+                break;
+            case R.id.fag5med20glas_enkeldor:
+                ChosenWall.putExtra("name", "picture6");
+
+                startActivity(ChosenWall);
+                break;
+            case R.id.fag6med24glass_enkeldor:
+                ChosenWall.putExtra("name", "picture7");
+
+                startActivity(ChosenWall);
+                break;
+            case R.id.dormed6glas:
+                ChosenWall.putExtra("name", "picture8");
+
+                startActivity(ChosenWall);
+                break;
+            case R.id.doubledor_glas12:
+                ChosenWall.putExtra("name", "picture9");
+
+                startActivity(ChosenWall);
+                break;
+            case R.id.skydedor_glas6:
+                ChosenWall.putExtra("name", "picture10");
+
+                startActivity(ChosenWall);
+                break;
         }
-    });
-    image2.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(Catalog.this,ChosenWall.class);
-            startActivity(i);
-        }
-    });
-        image3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
-        image10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Catalog.this,ChosenWall.class);
-                startActivity(i);
-            }
-        });
     }
 }
 
