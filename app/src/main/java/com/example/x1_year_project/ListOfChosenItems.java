@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PriceWall extends AppCompatActivity {
+public class ListOfChosenItems extends AppCompatActivity {
 
     //Written by Kim
     @Override
@@ -20,7 +20,7 @@ public class PriceWall extends AppCompatActivity {
         goToInfoSite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PriceWall.this,InfoSite.class);
+                Intent intent = new Intent(ListOfChosenItems.this,InfoSite.class);
                 startActivity(intent);
             }
         });
