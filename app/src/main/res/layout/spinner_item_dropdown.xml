@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:ellipsize="marquee"
-    android:textColor="#aa66cc"
+    android:textColor="#FFFFFF"
     android:singleLine="true" />
