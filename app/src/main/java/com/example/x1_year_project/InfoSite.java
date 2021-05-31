@@ -19,7 +19,7 @@ public class InfoSite extends AppCompatActivity {
         //get the spinner from the xml.
         Spinner dropdown = findViewById(R.id.spinner1);
         //create a list of items for the spinner.
-        String[] items = new String[]{"1", "2", "three"};
+        String[] items = new String[]{"XL-Byg", "Bygma", "Stark"};
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
         //There are multiple variations of this, but this is the basic variant.
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
