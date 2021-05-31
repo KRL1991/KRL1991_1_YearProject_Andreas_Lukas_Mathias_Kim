@@ -120,31 +120,32 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip9"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Farve:Rød"
             android:textColor="@color/white"
             app:chipBackgroundColor="#BF8E55" />
-        />
+
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip10"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Farve:Messing"
             android:textColor="@color/white"
             app:chipBackgroundColor="#BF8E55" />
-        />
+
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip11"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Farve:?"
             android:textColor="@color/white"
             app:chipBackgroundColor="#BF8E55" />
-        />
-
 
     </com.google.android.material.chip.ChipGroup>
 
