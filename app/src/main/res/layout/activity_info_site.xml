@@ -143,15 +143,16 @@
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="152dp"
-        android:layout_height="56dp"
-        android:background="@android:drawable/btn_dropdown"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:background="@drawable/spinner_bg"
+        android:popupBackground="#BF8E55"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+        app:layout_constraintVertical_bias="0.706" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
