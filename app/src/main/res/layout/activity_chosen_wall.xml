@@ -77,38 +77,76 @@
     <com.google.android.material.chip.ChipGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="320dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip7"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Akustikpanel" />
+            android:text="Akustikpanel"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip6"
             style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Satinglas" />
+            android:text="Satinglas"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip4"
             style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Frostedglas" />
+            android:text="Frostedglas"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip5"
             style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Farve" />
+            android:text="Farve:Sort"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farve:Rød"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farve:Messing"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farve:?"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#BF8E55" />
+            />
+
+
     </com.google.android.material.chip.ChipGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
