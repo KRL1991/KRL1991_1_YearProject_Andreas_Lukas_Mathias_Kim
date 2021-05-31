@@ -142,28 +142,24 @@
         app:layout_constraintVertical_bias="0.594" />
 
     <Spinner
-        android:id="@+id/planets_spinner"
+        android:id="@+id/spinner1"
         android:layout_width="102dp"
         android:layout_height="34dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
-
-    <resources>
-        <string-array name="planets_array">
-            <item>Mercury</item>
-            <item>Venus</item>
-            <item>Earth</item>
-            <item>Mars</item>
-            <item>Jupiter</item>
-            <item>Saturn</item>
-            <item>Uranus</item>
-            <item>Neptune</item>
-        </string-array>
-    </resources>
-
+        app:layout_constraintVertical_bias="0.698" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+        tools:layout_editor_absoluteX="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />144dp"
+        tools:layout_editor_absoluteY="489dp"
