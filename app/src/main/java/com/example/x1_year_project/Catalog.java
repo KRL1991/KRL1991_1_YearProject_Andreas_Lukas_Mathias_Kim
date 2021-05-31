@@ -11,6 +11,8 @@ import android.widget.ImageView;
 
 public class Catalog extends AppCompatActivity implements View.OnClickListener {
 
+    // Written by Andreas
+
     ImageView  skydedor_6glas,doubledor_glas12,fag1_glas4,fag2_glas6,fag2_glas8,
             fag3_glas12_med_enkledor,fag4_glas16_med_doubledor,fag5_glas20_med_enkledor,
             fag6_glas24_med_enkledor,glas6_dor;
