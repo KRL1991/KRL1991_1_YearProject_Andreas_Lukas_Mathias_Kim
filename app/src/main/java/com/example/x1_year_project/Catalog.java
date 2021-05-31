@@ -55,57 +55,84 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.fag1med4glas:
                 ChosenWall.putExtra("name", "picture1");
-
-                startActivity(ChosenWall);
-                break;
-
-            case R.id.fag2med6glas:
-                ChosenWall.putExtra("name", "picture2");
+                ChosenWall.putExtra("Width", "60");
+                ChosenWall.putExtra("Height", "240");
 
                 startActivity(ChosenWall);
                 break;
 
             case R.id.fag2med8glas:
                 ChosenWall.putExtra("name", "picture3");
+                ChosenWall.putExtra("Width", "100");
+                ChosenWall.putExtra("Height", "240");
 
                 startActivity(ChosenWall);
 
                 break;
+
+            case R.id.fag2med6glas:
+                ChosenWall.putExtra("name", "picture2");
+                ChosenWall.putExtra("Width", "100");
+                ChosenWall.putExtra("Height", "220");
+
+
+                startActivity(ChosenWall);
+                break;
+
+            case R.id.dormed6glas:
+                ChosenWall.putExtra("name", "picture8");
+                ChosenWall.putExtra("Width", "100");
+                ChosenWall.putExtra("Height", "220");
+
+                startActivity(ChosenWall);
+                break;
+
+            case R.id.doubledor_glas12:
+                ChosenWall.putExtra("name", "picture9");
+                ChosenWall.putExtra("Width", "200");
+                ChosenWall.putExtra("Height", "220");
+
+                startActivity(ChosenWall);
+                break;
+
+            case R.id.skydedor_glas6:
+                ChosenWall.putExtra("name", "picture10");
+                ChosenWall.putExtra("Width", "100");
+                ChosenWall.putExtra("Height", "220");
+
+                startActivity(ChosenWall);
+                break;
+
             case R.id.fag3med12glas_enkeldor:
                 ChosenWall.putExtra("name", "picture4");
+                ChosenWall.putExtra("Width", "150");
+                ChosenWall.putExtra("Height", "240");
 
                 startActivity(ChosenWall);
                 break;
             case R.id.fag4med16glas_doubledor:
                 ChosenWall.putExtra("name", "picture5");
+                ChosenWall.putExtra("Width", "200");
+                ChosenWall.putExtra("Height", "240");
 
                 startActivity(ChosenWall);
                 break;
             case R.id.fag5med20glas_enkeldor:
                 ChosenWall.putExtra("name", "picture6");
+                ChosenWall.putExtra("Width", "300");
+                ChosenWall.putExtra("Height", "240");
 
                 startActivity(ChosenWall);
                 break;
             case R.id.fag6med24glass_enkeldor:
                 ChosenWall.putExtra("name", "picture7");
+                ChosenWall.putExtra("Width", "360");
+                ChosenWall.putExtra("Height", "240");
 
                 startActivity(ChosenWall);
                 break;
-            case R.id.dormed6glas:
-                ChosenWall.putExtra("name", "picture8");
 
-                startActivity(ChosenWall);
-                break;
-            case R.id.doubledor_glas12:
-                ChosenWall.putExtra("name", "picture9");
 
-                startActivity(ChosenWall);
-                break;
-            case R.id.skydedor_glas6:
-                ChosenWall.putExtra("name", "picture10");
-
-                startActivity(ChosenWall);
-                break;
         }
     }
 }
