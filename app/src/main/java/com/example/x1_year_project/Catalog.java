@@ -17,6 +17,7 @@ public class Catalog extends AppCompatActivity { //Mathias
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_katalog);
+
         ImageView image1 = findViewById(R.id.fag1med4glas);
         ImageView image2 = findViewById(R.id.fag2med8glas);
         ImageView image3 = findViewById(R.id.fag2med6glas);
