@@ -22,9 +22,12 @@ public class InfoSite extends AppCompatActivity {
         String[] items = new String[]{"XL-Byg", "Bygma", "Stark"};
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
         //There are multiple variations of this, but this is the basic variant.
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.simple_spinner_dropdown_item, items);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //set the spinners adapter to the previously created one.
         dropdown.setAdapter(adapter);
+
+
 
 
 
