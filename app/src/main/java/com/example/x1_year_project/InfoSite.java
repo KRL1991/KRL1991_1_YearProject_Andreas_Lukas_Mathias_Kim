@@ -23,7 +23,7 @@ public class InfoSite extends AppCompatActivity {
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
         //There are multiple variations of this, but this is the basic variant.
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.spinner_item_dropdown);
         //set the spinners adapter to the previously created one.
         dropdown.setAdapter(adapter);
 
