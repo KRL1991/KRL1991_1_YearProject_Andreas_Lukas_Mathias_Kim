@@ -1,4 +1,4 @@
-package com.example.x1_year_project;
+package view;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.x1_year_project.R;
 
 // written by Kim
 public class SplashScreenActivity extends AppCompatActivity {

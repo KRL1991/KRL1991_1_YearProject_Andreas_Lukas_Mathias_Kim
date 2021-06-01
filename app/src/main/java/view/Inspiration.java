@@ -1,8 +1,10 @@
-package com.example.x1_year_project;
+package view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.x1_year_project.R;
 
 public class Inspiration extends AppCompatActivity {
     /*
