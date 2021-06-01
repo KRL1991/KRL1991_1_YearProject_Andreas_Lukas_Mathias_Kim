@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.x1_year_project.R;
 
@@ -16,6 +17,8 @@ public class ChosenWall extends AppCompatActivity {
     //Written by Kim and Andreas
 
     EditText ChosenWallHeightEditText, ChosenWallWidthEditText;
+
+    TextView PriceTextView;
 
     ImageView imageView3;
 
@@ -37,6 +40,7 @@ public class ChosenWall extends AppCompatActivity {
 
         ChosenWallHeightEditText = (EditText) findViewById(R.id.ChosenWallHeightEditText);
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
+        PriceTextView = (TextView) findViewById(R.id.PriceTextView);
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
 
@@ -55,6 +59,10 @@ public class ChosenWall extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ChosenWall.this, ListOfChosenItems.class);
+                intent.putExtra("height", ChosenWallHeightEditText.getText().toString());
+                intent.putExtra("width", ChosenWallWidthEditText.getText().toString());
+                intent.putExtra("price", PriceTextView.getText().toString());
+               // intent.putExtra("name", .getText().toString());
                 startActivity(intent);
             }
         });
