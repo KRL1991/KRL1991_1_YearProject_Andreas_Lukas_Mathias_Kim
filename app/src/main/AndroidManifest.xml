@@ -9,22 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KRL1991_1_YearProject_Andreas_Lukas_Mathias_Kim">
-        <activity android:name="view.Confirmation"
-            android:label="Bekræftelse"/>
-        <activity android:name="view.ListOfChosenItems"
-            android:label="Kurv"/>
-        <activity android:name="view.InfoSite"
-            android:label="Kontakt Information"/>
+        <activity
+            android:name="view.Extra"
+            android:label="Extra" />
+        <activity
+            android:name="view.Confirmation"
+            android:label="Bekræftelse" />
+        <activity
+            android:name="view.ListOfChosenItems"
+            android:label="Kurv" />
+        <activity
+            android:name="view.InfoSite"
+            android:label="Kontakt Information" />
         <activity
             android:name="view.AboutUs"
             android:label="Om os" />
         <activity
             android:name="view.ChosenWall"
             android:label="Angiv Mål" />
-        <activity android:name="view.Inspiration"
-            android:label="Inspiration"/>
-        <activity android:name="view.Catalog"
-            android:label="Katalog"/>
+        <activity
+            android:name="view.Inspiration"
+            android:label="Inspiration" />
+        <activity
+            android:name="view.Catalog"
+            android:label="Katalog" />
         <activity
             android:name="view.SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
