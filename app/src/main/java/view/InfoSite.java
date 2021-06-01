@@ -1,4 +1,4 @@
-package com.example.x1_year_project;
+package view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import com.example.x1_year_project.R;
 
 public class InfoSite extends AppCompatActivity {
 

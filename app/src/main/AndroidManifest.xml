@@ -9,24 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KRL1991_1_YearProject_Andreas_Lukas_Mathias_Kim">
-        <activity android:name=".Confirmation"
+        <activity android:name="view.Confirmation"
             android:label="Bekræftelse"/>
-        <activity android:name=".ListOfChosenItems"
+        <activity android:name="view.ListOfChosenItems"
             android:label="Kurv"/>
-        <activity android:name=".InfoSite"
+        <activity android:name="view.InfoSite"
             android:label="Kontakt Information"/>
         <activity
-            android:name=".AboutUs"
+            android:name="view.AboutUs"
             android:label="Om os" />
         <activity
-            android:name=".ChosenWall"
+            android:name="view.ChosenWall"
             android:label="Angiv Mål" />
-        <activity android:name=".Inspiration"
+        <activity android:name="view.Inspiration"
             android:label="Inspiration"/>
-        <activity android:name=".Catalog"
+        <activity android:name="view.Catalog"
             android:label="Katalog"/>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="view.SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StartScreen"
+            android:name="view.StartScreen"
             android:label="Hjem">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

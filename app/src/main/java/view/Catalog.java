@@ -1,13 +1,13 @@
-package com.example.x1_year_project;
+package view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.x1_year_project.R;
 
 public class Catalog extends AppCompatActivity implements View.OnClickListener {
 
