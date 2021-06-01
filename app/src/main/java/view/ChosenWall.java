@@ -58,7 +58,7 @@ public class ChosenWall extends AppCompatActivity {
         goToPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChosenWall.this, ListOfChosenItems.class);
+                Intent intent = new Intent(ChosenWall.this, Extra.class);
                 intent.putExtra("height", ChosenWallHeightEditText.getText().toString());
                 intent.putExtra("width", ChosenWallWidthEditText.getText().toString());
                 intent.putExtra("price", PriceTextView.getText().toString());
