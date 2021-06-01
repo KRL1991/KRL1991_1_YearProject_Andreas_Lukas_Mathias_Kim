@@ -22,6 +22,7 @@ public class Extra extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Extra.this,ListOfChosenItems.class);
+                startActivity(intent);
             }
         });
     }
