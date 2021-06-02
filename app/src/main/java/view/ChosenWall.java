@@ -16,7 +16,7 @@ public class ChosenWall extends AppCompatActivity {
 
     //Written by Kim and Andreas
 
-    EditText ChosenWallHeightEditText, ChosenWallWidthEditText;
+    EditText ChosenWallHeightEditText, ChosenWallWidthEditText,ChosenWallNameWallEditText;
 
     TextView PriceTextView;
 
@@ -40,6 +40,7 @@ public class ChosenWall extends AppCompatActivity {
 
         ChosenWallHeightEditText = (EditText) findViewById(R.id.ChosenWallHeightEditText);
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
+        ChosenWallNameWallEditText = (EditText) findViewById(R.id.ChosenWallNameWallEditText);
         PriceTextView = (TextView) findViewById(R.id.PriceTextView);
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
@@ -51,8 +52,9 @@ public class ChosenWall extends AppCompatActivity {
             String name = bundle.getString("name");
             String Height = bundle.getString("Height");
             String Width = bundle.getString("Width");
+            String WallName = bundle.getString("WallName");
 
-            setUp(name, Height, Width);
+            setUp(name, Height, Width, WallName);
         }
 
         goToPrice.setOnClickListener(new View.OnClickListener() {
@@ -62,65 +64,77 @@ public class ChosenWall extends AppCompatActivity {
                 intent.putExtra("height", ChosenWallHeightEditText.getText().toString());
                 intent.putExtra("width", ChosenWallWidthEditText.getText().toString());
                 intent.putExtra("price", PriceTextView.getText().toString());
-               // intent.putExtra("name", .getText().toString());
+                intent.putExtra("WallName", ChosenWallNameWallEditText.getText().toString());
                 startActivity(intent);
             }
         });
 
     }
 
-    private void setUp(String name, String Height, String Width) {
+    private void setUp(String name, String Height, String Width, String WallName) {
         if (name.equals("picture1")) {
 
             imageView3.setImageResource(R.drawable.fag1_glas4);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
+
+
 
 
         } else if (name.equals("picture2")) {
             imageView3.setImageResource(R.drawable.fag2_glas6);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture3")) {
             imageView3.setImageResource(R.drawable.fag2_glas8);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture4")) {
             imageView3.setImageResource(R.drawable.fag3_glas12_med_enkeldor);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture5")) {
             imageView3.setImageResource(R.drawable.fag4_glas16_med_doubledor);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture6")) {
             imageView3.setImageResource(R.drawable.fag5_glas20_med_enkeldor);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture7")) {
             imageView3.setImageResource(R.drawable.fag6_glas24_med_enkeldor);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture8")) {
             imageView3.setImageResource(R.drawable.glas6_dor);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture9")) {
             imageView3.setImageResource(R.drawable.doubledor_glas12);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
 
         } else if (name.equals("picture10")) {
             imageView3.setImageResource(R.drawable.skydedor_6glas);
             ChosenWallWidthEditText.setText(Width);
             ChosenWallHeightEditText.setText(Height);
+            ChosenWallNameWallEditText.setText(WallName);
         }
     }
 }

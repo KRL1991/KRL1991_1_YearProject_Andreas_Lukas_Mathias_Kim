@@ -57,6 +57,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture1");
                 ChosenWall.putExtra("Width", "60");
                 ChosenWall.putExtra("Height", "240");
+                ChosenWall.putExtra("WallName","1Fag M/4 Glas");
 
                 startActivity(ChosenWall);
                 break;
@@ -65,6 +66,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture3");
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "240");
+                ChosenWall.putExtra("WallName","2Fag M/8 Glas");
 
                 startActivity(ChosenWall);
 
@@ -74,6 +76,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture2");
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
+                ChosenWall.putExtra("WallName","2Fag M/6 Glas");
 
 
                 startActivity(ChosenWall);
@@ -83,6 +86,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture8");
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
+                ChosenWall.putExtra("WallName","Dør M/6 Glas");
 
                 startActivity(ChosenWall);
                 break;
@@ -91,6 +95,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture9");
                 ChosenWall.putExtra("Width", "200");
                 ChosenWall.putExtra("Height", "220");
+                ChosenWall.putExtra("WallName","Dobbeltdør M/12 Glas");
 
                 startActivity(ChosenWall);
                 break;
@@ -99,6 +104,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture10");
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
+                ChosenWall.putExtra("WallName","Skydedør M/6 Glas");
 
                 startActivity(ChosenWall);
                 break;
@@ -107,6 +113,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture4");
                 ChosenWall.putExtra("Width", "150");
                 ChosenWall.putExtra("Height", "240");
+                ChosenWall.putExtra("WallName","3Fag M/12 Glas M/Enkeltdør");
 
                 startActivity(ChosenWall);
                 break;
@@ -114,6 +121,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture5");
                 ChosenWall.putExtra("Width", "200");
                 ChosenWall.putExtra("Height", "240");
+                ChosenWall.putExtra("WallName","4Fag M/16 Glas M/Dobbeltdør");
 
                 startActivity(ChosenWall);
                 break;
@@ -121,6 +129,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture6");
                 ChosenWall.putExtra("Width", "300");
                 ChosenWall.putExtra("Height", "240");
+                ChosenWall.putExtra("WallName","5Fag M/20 Glas M/Enkeltdør");
 
                 startActivity(ChosenWall);
                 break;
@@ -128,6 +137,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("name", "picture7");
                 ChosenWall.putExtra("Width", "360");
                 ChosenWall.putExtra("Height", "240");
+                ChosenWall.putExtra("WallName","6Fag M/24 Glas M/Enkeltdør");
 
                 startActivity(ChosenWall);
                 break;
