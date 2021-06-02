@@ -32,10 +32,11 @@ public class ListOfChosenItems extends AppCompatActivity {
         String heightData = listdata.getString("height");
         String widthData = listdata.getString("width");
         String priceData = listdata.getString("price");
+        String wallName = listdata.getString("WallName");
 
         StringBuilder stringBuilder = new StringBuilder(string);
 
-        stringBuilder.append(priceData).append(", højde ").append(heightData).append(" cm , bredde ").append(widthData).append(" cm ,");
+        stringBuilder.append(wallName).append(", ").append(priceData).append(", højde ").append(heightData).append(" cm , bredde ").append(widthData).append(" cm ,");
         fullString = stringBuilder.toString();
 
         list.add(fullString);

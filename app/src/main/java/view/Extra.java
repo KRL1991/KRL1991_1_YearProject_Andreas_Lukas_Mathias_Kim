@@ -25,6 +25,7 @@ public class Extra extends AppCompatActivity {
         String heightData = listDataExtra.getString("height");
         String widthData = listDataExtra.getString("width");
         String priceData = listDataExtra.getString("price");
+        String wallPrice = listDataExtra.getString("WallName");
 
         Button goToBasket = findViewById(R.id.ExtraButton);
         goToBasket.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +37,7 @@ public class Extra extends AppCompatActivity {
                 intent.putExtra("height",heightData);
                 intent.putExtra("width", widthData);
                 intent.putExtra("price", priceData);
+                intent.putExtra("WallName",wallPrice);
 
                 startActivity(intent);
             }
