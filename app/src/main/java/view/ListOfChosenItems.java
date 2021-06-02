@@ -39,7 +39,8 @@ public class ListOfChosenItems extends AppCompatActivity {
         stringBuilder.append(wallName).append(", ").append(priceData).append(", højde ").append(heightData).append(" cm , bredde ").append(widthData).append(" cm ,");
         fullString = stringBuilder.toString();
 
-        list.add(fullString);
+        if (listOfchosenItems != null) {
+            list.add(fullString);}
 
 
 
