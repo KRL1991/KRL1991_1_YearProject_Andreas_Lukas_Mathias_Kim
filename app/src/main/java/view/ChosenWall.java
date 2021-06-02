@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import com.example.x1_year_project.R;
 
+import model.Basket;
+import model.Wall;
+
 public class ChosenWall extends AppCompatActivity {
 
     //Written by Kim and Andreas
@@ -35,11 +38,11 @@ public class ChosenWall extends AppCompatActivity {
         ChosenWallHeightEditText = (EditText) findViewById(R.id.ChosenWallHeightEditText);
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
         ChosenWallNameWallEditText = (EditText) findViewById(R.id.ChosenWallNameWallEditText);
-        PriceTextView = (TextView) findViewById(R.id.PriceTextView);
+        PriceTextView = (TextView) findViewById(R.id.ChosenWallPriceTextView);
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
 
-
+//Andreas - data from catalog to ChosenWall
         bundle = getIntent().getExtras();
 
         if (bundle != null) {
@@ -51,14 +54,23 @@ public class ChosenWall extends AppCompatActivity {
             setUp(name, Height, Width, WallName);
         }
 
+
         goToPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Wall selectedWall = new Wall();
+                selectedWall.setWallName(ChosenWallNameWallEditText.getText().toString());
+                selectedWall.setHeight(ChosenWallHeightEditText.getText().toString());
+                selectedWall.setWidth(ChosenWallWidthEditText.getText().toString());
+                selectedWall.setPrice(PriceTextView.getText().toString());
+                Basket.content.add(selectedWall);
+
                 Intent intent = new Intent(ChosenWall.this, Extra.class);
-                intent.putExtra("height", ChosenWallHeightEditText.getText().toString());
-                intent.putExtra("width", ChosenWallWidthEditText.getText().toString());
-                intent.putExtra("price", PriceTextView.getText().toString());
-                intent.putExtra("WallName", ChosenWallNameWallEditText.getText().toString());
+                intent.putExtra("height", selectedWall.getHeight());
+                intent.putExtra("width", selectedWall.getWidth());
+                intent.putExtra("price", selectedWall.getPrice());
+                intent.putExtra("WallName", selectedWall.getWallName());
                 startActivity(intent);
             }
         });
