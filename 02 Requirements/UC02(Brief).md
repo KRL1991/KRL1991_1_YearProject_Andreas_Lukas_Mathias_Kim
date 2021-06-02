@@ -1,9 +1,9 @@
 # Use Case 02: Edit Catalog.
 
-Actors:
+**Actors**:
 Adminstrator.
 
-Decription
+**Decription**
 - New-Yorker.dk ønsker at opdatere en pris.
 - System anmoder om login oplysninger.
 - New-Yorker.dk angiver gyldige login oplysninger.
