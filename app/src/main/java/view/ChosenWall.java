@@ -32,12 +32,6 @@ public class ChosenWall extends AppCompatActivity {
 
         Button goToPrice = findViewById(R.id.ChosenWallButton);
 
-        /*Spinner extras = findViewById(R.id.ChosenWallSpinner);
-        String [] items = new String[] {"Vælg tilvalg","Hello","Hello2","Hello3"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,items);
-        extras.setAdapter(adapter);*/
-
-
         ChosenWallHeightEditText = (EditText) findViewById(R.id.ChosenWallHeightEditText);
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
         ChosenWallNameWallEditText = (EditText) findViewById(R.id.ChosenWallNameWallEditText);
