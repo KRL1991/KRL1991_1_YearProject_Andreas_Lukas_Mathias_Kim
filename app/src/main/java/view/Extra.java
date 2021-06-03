@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import com.example.x1_year_project.R;
 
+import model.Basket;
+import model.Wall;
+
 public class Extra extends AppCompatActivity {
 
 
@@ -23,14 +26,12 @@ public class Extra extends AppCompatActivity {
         setContentView(R.layout.activity_extra);
 
 
-
         Button goToBasket = findViewById(R.id.ExtraButton);
         TextView extraPrice = findViewById(R.id.ExtraPriceTextView);
 
-        String extraPriceData;
-        extraPriceData = priceData;
-        extraPrice.setText(extraPriceData);
-
+        for (int i = 0; i < Basket.getContent().size(); i++) {
+            extraPrice.setText(Basket.getContent().get(i).getPrice());
+        }
 
 
         Spinner extras = findViewById(R.id.spinnerExtra);
