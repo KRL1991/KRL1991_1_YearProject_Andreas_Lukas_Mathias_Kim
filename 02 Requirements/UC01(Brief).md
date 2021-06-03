@@ -9,10 +9,6 @@ Description:
 
 - **Applikationen** starter op på "SplaschScreen".
 - **Applikationen** går videre til start skærmen, som viser 3 valgmulighedder for brugeren.
-- **1.** Katalog. **2.** Inspiration. **3.** Om os.
-- Om os viser information omkring "New-Yorker.dk".
-- Inspiration viser New-yorker vægge i rigtig brug.
-- Kataloget præsentere mulige vægge for brugeren, samts deres dimisioner(Højde og bredde).
 - **Brugeren** vælger "Katalog".
 - **Applikationen** viser mulige vægge og deres dimmensioner(Højde og Bredde).
 - **Brugeren** vælger sin ønskede væg.
