@@ -14,6 +14,7 @@ import com.example.x1_year_project.R;
 
 import model.Basket;
 import model.Wall;
+import model.WallPriceList;
 
 public class ChosenWall extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class ChosenWall extends AppCompatActivity {
 
     EditText ChosenWallHeightEditText, ChosenWallWidthEditText,ChosenWallNameWallEditText;
 
-    TextView PriceTextView;
+    TextView ChosenWallPriceTextView;
 
     ImageView imageView3;
 
@@ -38,7 +39,7 @@ public class ChosenWall extends AppCompatActivity {
         ChosenWallHeightEditText = (EditText) findViewById(R.id.ChosenWallHeightEditText);
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
         ChosenWallNameWallEditText = (EditText) findViewById(R.id.ChosenWallNameWallEditText);
-        PriceTextView = (TextView) findViewById(R.id.ChosenWallPriceTextView);
+        ChosenWallPriceTextView = (TextView) findViewById(R.id.ChosenWallPriceTextView);
 
         imageView3 = (ImageView) findViewById(R.id.imageView3);
 
@@ -47,11 +48,12 @@ public class ChosenWall extends AppCompatActivity {
 
         if (bundle != null) {
             String name = bundle.getString("name");
-            String Height = bundle.getString("Height");
-            String Width = bundle.getString("Width");
-            String WallName = bundle.getString("WallName");
+            String height = bundle.getString("Height");
+            String width = bundle.getString("Width");
+            String wallName = bundle.getString("WallName");
+            String price = bundle.getString("Price");
 
-            setUp(name, Height, Width, WallName);
+            setUp(name, height, width, wallName,price);
         }
 
 
@@ -59,11 +61,12 @@ public class ChosenWall extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 Wall selectedWall = new Wall();
                 selectedWall.setWallName(ChosenWallNameWallEditText.getText().toString());
                 selectedWall.setHeight(ChosenWallHeightEditText.getText().toString());
                 selectedWall.setWidth(ChosenWallWidthEditText.getText().toString());
-                selectedWall.setPrice(PriceTextView.getText().toString());
+                selectedWall.setPrice(ChosenWallPriceTextView.getText().toString());
                 Basket.content.add(selectedWall);
 
                 Intent intent = new Intent(ChosenWall.this, Extra.class);
@@ -77,70 +80,82 @@ public class ChosenWall extends AppCompatActivity {
 
     }
 
-    private void setUp(String name, String Height, String Width, String WallName) {
+    private void setUp(String name, String height, String width, String wallName, String price) {
         if (name.equals("picture1")) {
 
             imageView3.setImageResource(R.drawable.fag1_glas4);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
 
 
 
         } else if (name.equals("picture2")) {
             imageView3.setImageResource(R.drawable.fag2_glas6);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
+
 
         } else if (name.equals("picture3")) {
             imageView3.setImageResource(R.drawable.fag2_glas8);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture4")) {
             imageView3.setImageResource(R.drawable.fag3_glas12_med_enkeldor);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture5")) {
             imageView3.setImageResource(R.drawable.fag4_glas16_med_doubledor);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture6")) {
             imageView3.setImageResource(R.drawable.fag5_glas20_med_enkeldor);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture7")) {
             imageView3.setImageResource(R.drawable.fag6_glas24_med_enkeldor);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture8")) {
             imageView3.setImageResource(R.drawable.glas6_dor);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture9")) {
             imageView3.setImageResource(R.drawable.doubledor_glas12);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
 
         } else if (name.equals("picture10")) {
             imageView3.setImageResource(R.drawable.skydedor_6glas);
-            ChosenWallWidthEditText.setText(Width);
-            ChosenWallHeightEditText.setText(Height);
-            ChosenWallNameWallEditText.setText(WallName);
+            ChosenWallWidthEditText.setText(width);
+            ChosenWallHeightEditText.setText(height);
+            ChosenWallNameWallEditText.setText(wallName);
+            ChosenWallPriceTextView.setText(price);
+
         }
     }
 }

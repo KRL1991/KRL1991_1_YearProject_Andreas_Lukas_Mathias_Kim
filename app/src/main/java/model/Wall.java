@@ -1,6 +1,6 @@
 package model;
 
-public class Wall implements Cloneable {
+public class Wall {
 
 
     String wallName;
