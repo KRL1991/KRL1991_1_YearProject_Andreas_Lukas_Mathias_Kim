@@ -25,10 +25,18 @@ public class Extra extends AppCompatActivity {
 
 
         Button goToBasket = findViewById(R.id.ExtraButton);
+        TextView extraPrice = findViewById(R.id.ExtraPriceTextView);
+
+        String extraPriceData;
+        extraPriceData = priceData;
+        extraPrice.setText(extraPriceData);
+
+
 
         Spinner extras = findViewById(R.id.spinnerExtra);
         String [] items = new String[] {"Vælg tilvalg","Rød","Sort","Messing"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_item,items);
+        adapter.setDropDownViewResource(R.layout.spinner_item_dropdown);
         extras.setAdapter(adapter);
 
 
