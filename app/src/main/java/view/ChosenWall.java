@@ -67,13 +67,11 @@ public class ChosenWall extends AppCompatActivity {
                 selectedWall.setHeight(ChosenWallHeightEditText.getText().toString());
                 selectedWall.setWidth(ChosenWallWidthEditText.getText().toString());
                 selectedWall.setPrice(ChosenWallPriceTextView.getText().toString());
-                Basket.content.add(selectedWall);
+                //Tilføjer den valgte væg til kurven.
+                Basket.getContent().add(selectedWall);
 
                 Intent intent = new Intent(ChosenWall.this, Extra.class);
-                intent.putExtra("height", selectedWall.getHeight());
-                intent.putExtra("width", selectedWall.getWidth());
-                intent.putExtra("price", selectedWall.getPrice());
-                intent.putExtra("WallName", selectedWall.getWallName());
+
                 startActivity(intent);
             }
         });
