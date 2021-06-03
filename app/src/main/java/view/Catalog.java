@@ -58,6 +58,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "60");
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","1Fag M/4 Glas");
+                ChosenWall.putExtra("Price","4925 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -67,6 +68,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","2Fag M/8 Glas");
+                ChosenWall.putExtra("Price","9850 kr");
 
                 startActivity(ChosenWall);
 
@@ -77,6 +79,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
                 ChosenWall.putExtra("WallName","2Fag M/6 Glas");
+                ChosenWall.putExtra("Price","7390 kr");
 
 
                 startActivity(ChosenWall);
@@ -87,6 +90,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
                 ChosenWall.putExtra("WallName","Dør M/6 Glas");
+                ChosenWall.putExtra("Price","9890 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -96,6 +100,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "200");
                 ChosenWall.putExtra("Height", "220");
                 ChosenWall.putExtra("WallName","Dobbeltdør M/12 Glas");
+                ChosenWall.putExtra("Price","19780 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -105,6 +110,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
                 ChosenWall.putExtra("WallName","Skydedør M/6 Glas");
+                ChosenWall.putExtra("Price","10490 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -114,6 +120,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "150");
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","3Fag M/12 Glas M/Enkeltdør");
+                ChosenWall.putExtra("Price","17275 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -122,6 +129,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "200");
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","4Fag M/16 Glas M/Dobbeltdør");
+                ChosenWall.putExtra("Price","24700 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -130,6 +138,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "300");
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","5Fag M/20 Glas M/Enkeltdør");
+                ChosenWall.putExtra("Price","27125 kr");
 
                 startActivity(ChosenWall);
                 break;
@@ -138,6 +147,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "360");
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","6Fag M/24 Glas M/Enkeltdør");
+                ChosenWall.putExtra("Price","32050 kr");
 
                 startActivity(ChosenWall);
                 break;
