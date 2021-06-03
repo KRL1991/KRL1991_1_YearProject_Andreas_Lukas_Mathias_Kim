@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import com.example.x1_year_project.R;
 
+import model.Basket;
+import model.Wall;
+
 public class Extra extends AppCompatActivity {
 
 
@@ -23,12 +26,18 @@ public class Extra extends AppCompatActivity {
         setContentView(R.layout.activity_extra);
 
 
-
         Button goToBasket = findViewById(R.id.ExtraButton);
+        TextView extraPrice = findViewById(R.id.ExtraPriceTextView);
+
+        for (int i = 0; i < Basket.getContent().size(); i++) {
+            extraPrice.setText(Basket.getContent().get(i).getPrice());
+        }
+
 
         Spinner extras = findViewById(R.id.spinnerExtra);
         String [] items = new String[] {"Vælg tilvalg","Rød","Sort","Messing"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_item,items);
+        adapter.setDropDownViewResource(R.layout.spinner_item_dropdown);
         extras.setAdapter(adapter);
 
 
