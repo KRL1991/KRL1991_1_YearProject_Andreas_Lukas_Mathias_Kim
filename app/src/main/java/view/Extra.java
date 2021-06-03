@@ -22,12 +22,7 @@ public class Extra extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_extra);
 
-        // A new bundle which gets the data from listData bundle.
-        Bundle listDataExtra = getIntent().getExtras();
-        String heightData = listDataExtra.getString("height");
-        String widthData = listDataExtra.getString("width");
-        String priceData = listDataExtra.getString("price");
-        String wallName = listDataExtra.getString("WallName");
+
 
         Button goToBasket = findViewById(R.id.ExtraButton);
         TextView extraPrice = findViewById(R.id.ExtraPriceTextView);
@@ -50,11 +45,7 @@ public class Extra extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Extra.this,ListOfChosenItems.class);
 
-                // The intent combines the Strings and the keys.
-                intent.putExtra("height",heightData);
-                intent.putExtra("width", widthData);
-                intent.putExtra("price", priceData);
-                intent.putExtra("WallName",wallName);
+
 
                 startActivity(intent);
             }
