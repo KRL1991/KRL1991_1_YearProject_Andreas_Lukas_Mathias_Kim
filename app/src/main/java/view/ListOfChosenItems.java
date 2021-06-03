@@ -15,6 +15,7 @@ import com.example.x1_year_project.R;
 import java.util.ArrayList;
 
 import model.Basket;
+import model.Wall;
 
 public class ListOfChosenItems extends AppCompatActivity {
 
@@ -30,23 +31,25 @@ public class ListOfChosenItems extends AppCompatActivity {
         ListView listOfchosenItems = (ListView) findViewById(R.id.ChosenitemsListView);
         ArrayList<String> list = new ArrayList<>();
 
-        for (int i = 0; i <Basket.content.size() ; i++) {
-            Log.d("Kim", Basket.content.get(i).getWallName());
-            Bundle listdata = getIntent().getExtras();
+
+
+//Løkke startes - basket arrayliste løbes igennem og returnere kurven. tjekker hvor mange elementer der er i (size).
+        for (int i = 0; i <Basket.getContent().size() ; i++) {
+            Log.d("Kim", Basket.getContent().get(i).getWallName());
 
             String string = "";
             String fullString = "";
-            String heightData = listdata.getString("height");
-            String widthData = listdata.getString("width");
-            String priceData = listdata.getString("price");
-            String wallName = listdata.getString("WallName");
+            String wallName = Basket.getContent().get(i).getWallName();
+            String priceData = Basket.getContent().get(i).getPrice();
+            String heightData = Basket.getContent().get(i).getHeight();
+            String widthData = Basket.getContent().get(i).getWidth();
 
             StringBuilder stringBuilder = new StringBuilder(string);
 
             stringBuilder.append(wallName).append(", ").append(priceData).append(", højde ").append(heightData).append(" cm , bredde ").append(widthData).append(" cm ,");
             fullString = stringBuilder.toString();
 
-            if (listOfchosenItems != null) {
+          if (listOfchosenItems != null) {
                 list.add(fullString);
             }
             // Her skal løkken slutte.
@@ -71,6 +74,7 @@ public class ListOfChosenItems extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ListOfChosenItems.this,Catalog.class);
+
                 startActivity(intent);
             }
         });
