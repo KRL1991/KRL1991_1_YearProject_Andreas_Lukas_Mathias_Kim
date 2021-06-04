@@ -6,8 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.example.x1_year_project.R;
+
+import model.Basket;
 
 public class Confirmation extends AppCompatActivity {
 
@@ -18,11 +21,16 @@ public class Confirmation extends AppCompatActivity {
 
         Button goHome = findViewById(R.id.ConfirmationButton);
 
+
         goHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Confirmation.this, StartScreen.class);
                 startActivity(intent);
+
+                Basket.getContent().clear();
+
+
             }
         });
     }
