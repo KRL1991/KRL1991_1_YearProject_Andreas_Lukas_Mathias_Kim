@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.x1_year_project.R;
 
+import exceptions.WallHeightOverThresholdException;
 import model.Basket;
 import model.Wall;
 import model.WallPriceList;
@@ -40,8 +41,30 @@ public class ChosenWall extends AppCompatActivity {
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
         ChosenWallNameWallEditText = (EditText) findViewById(R.id.ChosenWallNameWallEditText);
         ChosenWallPriceTextView = (TextView) findViewById(R.id.ChosenWallPriceTextView);
-
         imageView3 = (ImageView) findViewById(R.id.imageView3);
+
+        //Kim
+        //Clears the EditTextview when doubleclicked.
+        ChosenWallHeightEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChosenWallHeightEditText.getEditableText().clear();
+            }
+        });
+
+       ChosenWallWidthEditText.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               ChosenWallWidthEditText.getEditableText().clear();
+           }
+       });
+       ChosenWallNameWallEditText.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               ChosenWallNameWallEditText.getEditableText().clear();
+           }
+       });
+
 
 //Andreas - data from catalog to ChosenWall
         bundle = getIntent().getExtras();
@@ -56,7 +79,7 @@ public class ChosenWall extends AppCompatActivity {
             setUp(name, height, width, wallName,price);
         }
 
-
+        //Kim and Mathias
         goToPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
