@@ -15,6 +15,7 @@ import com.example.x1_year_project.R;
 import java.util.ArrayList;
 
 import model.Basket;
+import model.CalculationGlassSize;
 import model.Wall;
 
 public class ListOfChosenItems extends AppCompatActivity {
@@ -33,6 +34,7 @@ public class ListOfChosenItems extends AppCompatActivity {
 
 
 
+
 //Løkke startes - basket arrayliste løbes igennem og returnere kurven. tjekker hvor mange elementer der er i (size).
         for (int i = 0; i <Basket.getContent().size() ; i++) {
             Log.d("Kim", Basket.getContent().get(i).getWallName());
@@ -43,10 +45,31 @@ public class ListOfChosenItems extends AppCompatActivity {
             String priceData = Basket.getContent().get(i).getPrice();
             String heightData = Basket.getContent().get(i).getHeight();
             String widthData = Basket.getContent().get(i).getWidth();
+            double heightDataDouble = Integer.parseInt(heightData);
+            double widthDataDouble = Integer.parseInt(widthData);
+            double glassSizeHeightInt = (heightDataDouble/60);
+            int actualGlassHeight = (int) (heightDataDouble/glassSizeHeightInt);
+            double glassSizeWidthInt = (widthDataDouble/45);
+            int actualGlassWidth = (int) (widthDataDouble/glassSizeWidthInt);
+
 
             StringBuilder stringBuilder = new StringBuilder(string);
 
-            stringBuilder.append(wallName).append(", ").append(priceData).append(", højde ").append(heightData).append(" cm , bredde ").append(widthData).append(" cm ,");
+            stringBuilder.append(wallName).append("")
+
+                    .append(", højde ")
+                    .append(heightData)
+                    .append(" cm , bredde ")
+                    .append(widthData).append(" cm , ")
+                    .append(" glashøjde ")
+                    .append(actualGlassHeight)
+                    .append(", glasbredde ")
+                    .append(actualGlassWidth)
+                    .append(" , pris: ")
+                    .append(priceData);
+
+
+
             fullString = stringBuilder.toString();
 
           if (listOfchosenItems != null) {
