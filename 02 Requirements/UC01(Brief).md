@@ -1,4 +1,4 @@
-# Use Case 1: Make and Send Request
+# Use Case 1: Forespørg på New-Yorker væg.
 
 Actors:
 </br> 
