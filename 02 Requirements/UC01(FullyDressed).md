@@ -4,7 +4,7 @@ Use Case navn| Forespørg på New-Yorker væg.
 Scope        | New-Yorker.dk.
 Level        | User Goal.
 Primary Actor| New-Yorker.dk's kunder (håndværkerer).
-Stakeholders and Interests | New-Yorker.dk samt deres kunder (håndværkerer).
+Stakeholders and Interests | **New-Yorker.dk** Vil gerne havde en applikation der gør det nemmere for deres kunder "håndværkere" at generere en forespørgelse af et produkt fra  deres valgmulighhedder.
 Preconditions | 
 Succes Guarantee | Forespørgsel på New-Yorker væg sendt.
 Main Succes Scenario | 1. Håndværkeren ønsker at bestille en New-yorker væg.  <br>  2. Systemet præsenterer muligheden for at kigge New-yorker.dk's katalog igennem. <br> 3. Håndværkeren vælger et produkt. <br>  4. Systemet præsenterer valgte væg, navn på valgte væg, standard mål og pris på valgte væg.  <br> 5. Håndværkeren angiver standard mål eller erstatter dem med sine tilpassede mål. <br> 6. Hånværker går videre til tilvalg. <br> 7. Systemet præsenterer valg af tilvalg til valgte væg. <br> 8. Håndværkeren indtaster sinde ønskede tilvalg eller går med standard udsende. <br> 9. Sytemet præsentere valgte væg i en kurv. <br> 10. Hånværker kan vælge at shoppe videre eller gå til forespørgesel. <br> 11. Hånværker går til forespørgsel. <br> 12. Hånværker skriver kontakt oplysninger. <br> 13. Håndværker vælger forhandler. <br> 14. Systemet præsenterer liste over forhandlerer. <br> 15. Håndværkeren sender forespørgsel. <br> 16. Systemet tilføjer automatisk plantegning til forespørgsel. <br> 17. Systemet informere at forespørglen er sendt. Systemet sender forespørslen til valgte forhandler, New-yorker.dk og forespørgsel-kvittering til håndværkeren. <br> 
