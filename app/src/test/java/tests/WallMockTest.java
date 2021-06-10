@@ -34,7 +34,7 @@ public class WallMockTest {
 
     private void assertThrows(WallHeightOverThresholdException wallTooHigh, int expected) {
 
-        if (expected < 251) throw wallTooHigh;
+        if (expected > 251) throw wallTooHigh;
     }
 
     @Test
@@ -51,7 +51,7 @@ public class WallMockTest {
 
     private void assertThrows(WallHeightUnderThresholdException wallTooSmall, int expected) {
 
-        if (expected > 9) throw wallTooSmall;
+        if (expected < 9) throw wallTooSmall;
 
 
     }
