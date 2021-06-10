@@ -4,7 +4,7 @@ Her er vores foreløbige iterations planer:
 
 **Iteration 1:**
 
-- Mockup designs udarbejdet. (Elaboration) 
+- Mockup designs udarbejdet. (Inception) 
 - UCD udarbejdet. (Inception)
 - FURPS+ Udarbejdet. (Inception)
 - UC01 brief og casual udarbejdet. (Inception)
