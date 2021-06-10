@@ -22,7 +22,7 @@ public class WallMockTest {
     }
 
     @Test
-    public void WallTooHigh() {
+    public void wallTooHigh() {
 
         WallMock wM = new WallMock(251);
 
@@ -38,7 +38,7 @@ public class WallMockTest {
     }
 
     @Test
-    public void WallTooSmall() {
+    public void wallTooSmall() {
 
         WallMock wM = new WallMock(9);
 
