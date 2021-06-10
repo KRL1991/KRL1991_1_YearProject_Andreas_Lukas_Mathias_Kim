@@ -54,7 +54,7 @@ Contains artifacts explaining the analysis structure of the project:
  Contains artifacts explaining the design structure of the project:
 
 - Operation Contracts
-  Format: Visio
+  Format: Docs
   
 - System Diagram
   Format: Visio
