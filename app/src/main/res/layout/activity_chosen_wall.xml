@@ -56,8 +56,8 @@
 
     <TextView
         android:id="@+id/ChosenWallPriceTextView"
-        android:layout_width="75dp"
-        android:layout_height="35dp"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
         android:gravity="center"
         android:text="Pris"
         android:textColor="#FFFFFF"
