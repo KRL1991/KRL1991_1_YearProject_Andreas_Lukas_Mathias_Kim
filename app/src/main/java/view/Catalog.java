@@ -20,7 +20,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_katalog);
+        setContentView(R.layout.activity_catalog);
 
 
         fag1_glas4 = (ImageView) findViewById(R.id.fag1med4glas);
