@@ -13,6 +13,7 @@ import com.example.x1_year_project.R;
 
 public class InfoSite extends AppCompatActivity {
 
+    //Lukas
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
