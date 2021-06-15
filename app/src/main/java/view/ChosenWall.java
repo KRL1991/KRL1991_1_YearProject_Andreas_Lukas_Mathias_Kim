@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.x1_year_project.R;
 
 import exceptions.WallHeightOverThresholdException;
+import exceptions.WallWidthUnderThresholdException;
 import model.Basket;
 import model.Wall;
 import model.WallPriceList;
@@ -34,7 +35,10 @@ public class ChosenWall extends AppCompatActivity {
     WallHeightOverThresholdException wallHeightOverThresholdException =
             new WallHeightOverThresholdException("Højde skal være under 251 cm");
 
-    /*Context context = getApplicationContext();
+    WallWidthUnderThresholdException wallWidthUnderThresholdException =
+            new WallWidthUnderThresholdException("Bredde skal være over 10 cm");
+
+ /*   Context context = getApplicationContext();
     CharSequence text = "Fejl, Højde skal være under 251 cm";
     int duration = Toast.LENGTH_SHORT;
 
@@ -57,26 +61,30 @@ public class ChosenWall extends AppCompatActivity {
 
         //Kim
         //Clears the EditTextview when doubleclicked.
-        ChosenWallHeightEditText.setOnClickListener(new View.OnClickListener() {
+
+
+        ChosenWallHeightEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public void onClick(View v) {
-                ChosenWallHeightEditText.getEditableText().clear();
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus)
+                ChosenWallHeightEditText.setText("");
             }
         });
 
-       ChosenWallWidthEditText.setOnClickListener(new View.OnClickListener() {
+       ChosenWallWidthEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
            @Override
-           public void onClick(View v) {
-               ChosenWallWidthEditText.getEditableText().clear();
+           public void onFocusChange(View v, boolean hasFocus) {
+               if(hasFocus)
+               ChosenWallWidthEditText.setText("");
            }
        });
-       ChosenWallNameWallEditText.setOnClickListener(new View.OnClickListener() {
+       ChosenWallNameWallEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
            @Override
-           public void onClick(View v) {
-               ChosenWallNameWallEditText.getEditableText().clear();
+           public void onFocusChange(View v, boolean hasFocus) {
+               if (hasFocus)
+               ChosenWallNameWallEditText.setText("");
            }
        });
-
 
 
 //Andreas - data from catalog to ChosenWall
@@ -107,10 +115,29 @@ public class ChosenWall extends AppCompatActivity {
                 Basket.getContent().add(selectedWall);
 
                 //Exception for wallOverthreshold som bliver kastet når den indtastede højde er over 251 cm
-               if (Integer.parseInt(selectedWall.getHeight()) >  251) {
-                    //toast.show();
-                    throw wallHeightOverThresholdException;
+
+                try {
+                  if (Integer.parseInt(selectedWall.getHeight()) >  251) {
+                      throw wallHeightOverThresholdException;
+                  }
+
+
+               } catch (WallHeightOverThresholdException e) {
+                    Toast.makeText(getApplicationContext(),"Højde må max være 250 cm",Toast.LENGTH_SHORT).show();
+
+
                }
+                //Exception for WallWidthUnderThreshold som bliver kastet når den indtastede bredde er under 9 cm
+               try {
+                    if (Integer.parseInt(selectedWall.getWidth()) < 9){
+                    throw wallWidthUnderThresholdException;
+                    }
+
+                } catch (WallWidthUnderThresholdException e) {
+                    Toast.makeText(getApplicationContext(),"Bredde skal være over 10 cm",Toast.LENGTH_SHORT).show();
+
+
+                }
 
                 Intent intent = new Intent(ChosenWall.this, Extra.class);
 

@@ -7,6 +7,7 @@ public class Wall {
     String price;
     String height;
     String width;
+    String acoutsicPanel = "0";
 
 
     public String getWallName() {
@@ -39,5 +40,13 @@ public class Wall {
 
     public void setWidth(String width) {
         this.width = width;
+    }
+
+    public String getAcoutsicPanel() {
+        return acoutsicPanel;
+    }
+
+    public void setAcoutsicPanel(String acoutsicPanel) {
+        this.acoutsicPanel = acoutsicPanel;
     }
 }
