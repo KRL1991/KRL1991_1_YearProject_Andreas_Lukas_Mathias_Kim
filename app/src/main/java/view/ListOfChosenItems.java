@@ -15,8 +15,6 @@ import com.example.x1_year_project.R;
 import java.util.ArrayList;
 
 import model.Basket;
-import model.CalculationGlassSize;
-import model.Wall;
 
 public class ListOfChosenItems extends AppCompatActivity {
 
@@ -24,7 +22,7 @@ public class ListOfChosenItems extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_price_wall);
+        setContentView(R.layout.activity_basket);
 
         Button goToInfoSite = findViewById(R.id.ListOfChosenItemsButton);
         Button goToKatalog = findViewById(R.id.ListOfItemsButtonGoToCatalog);
@@ -90,6 +88,8 @@ public class ListOfChosenItems extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ListOfChosenItems.this,InfoSite.class);
                 startActivity(intent);
+
+
             }
         });
 
