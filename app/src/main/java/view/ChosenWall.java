@@ -2,6 +2,7 @@ package view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.x1_year_project.R;
 
@@ -28,6 +30,16 @@ public class ChosenWall extends AppCompatActivity {
     ImageView imageView3;
 
     Bundle bundle;
+
+    WallHeightOverThresholdException wallHeightOverThresholdException =
+            new WallHeightOverThresholdException("Højde skal være under 251 cm");
+
+    /*Context context = getApplicationContext();
+    CharSequence text = "Fejl, Højde skal være under 251 cm";
+    int duration = Toast.LENGTH_SHORT;
+
+    Toast toast = Toast.makeText(context, text, duration);*/
+
 
 
     @Override
@@ -66,6 +78,7 @@ public class ChosenWall extends AppCompatActivity {
        });
 
 
+
 //Andreas - data from catalog to ChosenWall
         bundle = getIntent().getExtras();
 
@@ -84,7 +97,7 @@ public class ChosenWall extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+                //Her laves et nyt objekt af Wall. Værdierne bliver her sat ud fra tekstfelterne.
                 Wall selectedWall = new Wall();
                 selectedWall.setWallName(ChosenWallNameWallEditText.getText().toString());
                 selectedWall.setHeight(ChosenWallHeightEditText.getText().toString());
@@ -93,11 +106,19 @@ public class ChosenWall extends AppCompatActivity {
                 //Tilføjer den valgte væg til kurven.
                 Basket.getContent().add(selectedWall);
 
+                //Exception for wallOverthreshold som bliver kastet når den indtastede højde er over 251 cm
+               if (Integer.parseInt(selectedWall.getHeight()) >  251) {
+                    //toast.show();
+                    throw wallHeightOverThresholdException;
+               }
+
                 Intent intent = new Intent(ChosenWall.this, Extra.class);
 
                 startActivity(intent);
             }
         });
+
+
 
     }
 
@@ -178,7 +199,10 @@ public class ChosenWall extends AppCompatActivity {
             ChosenWallPriceTextView.setText(price);
 
         }
+
+
     }
+
 }
 
 

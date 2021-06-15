@@ -99,6 +99,7 @@ public class InfoSite extends AppCompatActivity {
                         .append(widthData)
                         .append(" cm");
 
+
                 fullString = email.toString();
                 emailContent.add(fullString);
 
@@ -111,7 +112,13 @@ public class InfoSite extends AppCompatActivity {
                 startActivity(Intent.createChooser(intent,"Send Email"));
 
 
+
+
                 }
+
+
+
+
                 //  startActivity(i);
     }
     });
