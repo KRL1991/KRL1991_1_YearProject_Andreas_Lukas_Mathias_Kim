@@ -28,6 +28,13 @@ public class Extra extends AppCompatActivity {
 
         Button goToBasket = findViewById(R.id.ExtraButton);
         TextView extraPrice = findViewById(R.id.ExtraPriceTextView);
+        EditText antalAkustikpaneler = findViewById(R.id.ExtraEditTextAkustikpanel);
+        EditText antalSatinglas = findViewById(R.id.ExtraEditTextSatinglas);
+        EditText antalVådrum = findViewById(R.id.ExtraEditTextVådrum);
+        EditText antalLydglas = findViewById(R.id.ExtraEditTextLydglas);
+
+        Basket opdateretBasket = new Basket();
+        Wall opdateretWall = new Wall();
 
         for (int i = 0; i < Basket.getContent().size(); i++) {
             extraPrice.setText(Basket.getContent().get(i).getPrice());
@@ -39,6 +46,17 @@ public class Extra extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_item,items);
         adapter.setDropDownViewResource(R.layout.spinner_item_dropdown);
         extras.setAdapter(adapter);
+
+
+
+        Button ExtraButtonUpdateMap = findViewById(R.id.ExtraButtonUpdateMap);
+        ExtraButtonUpdateMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
 
 
         goToBasket.setOnClickListener(new View.OnClickListener() {
