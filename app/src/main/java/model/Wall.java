@@ -8,6 +8,10 @@ public class Wall {
     String height;
     String width;
     String acoutsicPanel = "0";
+    String satinGlass = "0";
+    String wetRoom = "0";
+    String soundGlass ="0";
+    String frameColor = "Standard";
 
 
     public String getWallName() {
@@ -48,5 +52,37 @@ public class Wall {
 
     public void setAcoutsicPanel(String acoutsicPanel) {
         this.acoutsicPanel = acoutsicPanel;
+    }
+
+    public String getSatinGlass() {
+        return satinGlass;
+    }
+
+    public void setSatinGlass(String satinGlass) {
+        this.satinGlass = satinGlass;
+    }
+
+    public String getWetRoom() {
+        return wetRoom;
+    }
+
+    public void setWetRoom(String wetRoom) {
+        this.wetRoom = wetRoom;
+    }
+
+    public String getSoundGlass() {
+        return soundGlass;
+    }
+
+    public void setSoundGlass(String soundGlass) {
+        this.soundGlass = soundGlass;
+    }
+
+    public String getFrameColor() {
+        return frameColor;
+    }
+
+    public void setFrameColor(String frameColor) {
+        this.frameColor = frameColor;
     }
 }

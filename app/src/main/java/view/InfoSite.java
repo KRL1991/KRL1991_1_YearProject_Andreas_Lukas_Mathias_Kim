@@ -102,6 +102,10 @@ public class InfoSite extends AppCompatActivity {
                 String heightData = Basket.getContent().get(i1).getHeight();
                 String widthData = Basket.getContent().get(i1).getWidth();
                 String acousticPanel = Basket.getContent().get(i1).getAcoutsicPanel();
+                String satinGlass = Basket.getContent().get(i1).getSatinGlass();
+                String wetRoom = Basket.getContent().get(i1).getWetRoom();
+                String soundGlass = Basket.getContent().get(i1).getSoundGlass();
+                String frameColor = Basket.getContent().get(i1).getFrameColor();
 
                         //Her appendes dataen som er blevet hentet fra arrayet.
                         email.append(wallName)
@@ -113,7 +117,11 @@ public class InfoSite extends AppCompatActivity {
                         .append(widthData)
                         .append(" cm\n")
                                 .append("Ekstra:\n")
-                                .append("Antal akustikpaneler: "+acousticPanel)
+                                .append(" Antal Akustikpaneler: "+acousticPanel +"\n")
+                                .append(" Antal Satin glas: "+satinGlass +"\n")
+                                .append(" Antal Vådrumspaneler: "+ wetRoom +"\n")
+                                .append(" Antal Lydglas: "+ soundGlass+"\n")
+                                .append(" Farve på ramme: "+ frameColor+"\n")
                                 .append("\n\n");
 
                 // Her laves fyldes den tomme string kaldet fullString
