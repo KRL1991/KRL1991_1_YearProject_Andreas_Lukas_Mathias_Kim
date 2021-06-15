@@ -29,8 +29,6 @@ public class InfoSite extends AppCompatActivity {
 
     EditText navn, telefon, userEmail, kommentar;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
