@@ -13,38 +13,6 @@ public class Wall {
     String soundGlass ="0";
     String frameColor = "Standard";
 
-    public String getAkustikpaneler() {
-        return akustikpaneler;
-    }
-
-    public void setAkustikpaneler(String akustikpaneler) {
-        this.akustikpaneler = akustikpaneler;
-    }
-
-    public String getVådrum() {
-        return Vådrum;
-    }
-
-    public void setVådrum(String vådrum) {
-        Vådrum = vådrum;
-    }
-
-    public String getSatin() {
-        return satin;
-    }
-
-    public void setSatin(String satin) {
-        this.satin = satin;
-    }
-
-    public String getLydglas() {
-        return lydglas;
-    }
-
-    public void setLydglas(String lydglas) {
-        this.lydglas = lydglas;
-    }
-
     public String getWallName() {
         return wallName;
     }
