@@ -19,7 +19,7 @@ import model.Wall;
 public class Extra extends AppCompatActivity {
 
 
-// Mathias og Kim
+    // Mathias og Kim
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
