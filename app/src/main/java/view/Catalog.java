@@ -60,7 +60,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","1Fag M/4 Glas");
                 ChosenWall.putExtra("Price","4925");
-
+          
                 startActivity(ChosenWall);
                 break;
 
@@ -70,9 +70,8 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","2Fag M/8 Glas");
                 ChosenWall.putExtra("Price","9850");
-
+            
                 startActivity(ChosenWall);
-
                 break;
 
             case R.id.fag2med6glas:
@@ -81,7 +80,6 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Height", "220");
                 ChosenWall.putExtra("WallName","2Fag M/6 Glas");
                 ChosenWall.putExtra("Price","7390");
-
 
                 startActivity(ChosenWall);
                 break;
@@ -122,7 +120,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Height", "240");
                 ChosenWall.putExtra("WallName","3Fag M/12 Glas M/Enkeltdør");
                 ChosenWall.putExtra("Price","17275");
-
+            
                 startActivity(ChosenWall);
                 break;
             case R.id.fag4med16glas_doubledor:
@@ -152,8 +150,8 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
 
                 startActivity(ChosenWall);
                 break;
-
-
+                
+                
         }
     }
 }
