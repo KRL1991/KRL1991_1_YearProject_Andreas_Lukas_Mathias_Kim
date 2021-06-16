@@ -43,6 +43,10 @@ public class ListOfChosenItems extends AppCompatActivity {
             String priceData = Basket.getContent().get(i).getPrice();
             String heightData = Basket.getContent().get(i).getHeight();
             String widthData = Basket.getContent().get(i).getWidth();
+            String acousticPanelData = Basket.getContent().get(i).getAcoutsicPanel();
+            String satinGlassData = Basket.getContent().get(i).getSatinGlass();
+            String wetRoomData = Basket.getContent().get(i).getWetRoom();
+            String soundGlassData = Basket.getContent().get(i).getSoundGlass();
             double heightDataDouble = Integer.parseInt(heightData);
             double widthDataDouble = Integer.parseInt(widthData);
             double glassSizeHeightInt = (heightDataDouble/60);
@@ -64,7 +68,15 @@ public class ListOfChosenItems extends AppCompatActivity {
                     .append(", glasbredde ")
                     .append(actualGlassWidth)
                     .append(" , pris: ")
-                    .append(priceData);
+                    .append(priceData)
+                    .append(" , akustikpaneler: ")
+                    .append(acousticPanelData)
+                    .append(" , satinglas: ")
+                    .append(satinGlassData)
+                    .append(" , vådrum: ")
+                    .append(wetRoomData)
+                    .append(" , lydglas: ")
+                    .append(soundGlassData);
 
 
 
