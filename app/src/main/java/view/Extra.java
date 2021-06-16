@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -17,6 +18,11 @@ import model.Basket;
 import model.Wall;
 
 public class Extra extends AppCompatActivity {
+
+    int acousticPrice = 318;
+    int satinGlassPrice = 70;
+    int wetRoom = 480;
+    int soundGlass = 95;
 
 
     // Mathias og Kim
@@ -33,11 +39,13 @@ public class Extra extends AppCompatActivity {
         EditText antalVådrum = findViewById(R.id.ExtraEditTextVådrum);
         EditText antalLydglas = findViewById(R.id.ExtraEditTextLydglas);
 
-        Basket opdateretBasket = new Basket();
-        Wall opdateretWall = new Wall();
+        //antalAkustikpaneler.setText("");
+
+        Wall updatedWallPrice = new Wall();
 
         for (int i = 0; i < Basket.getContent().size(); i++) {
             extraPrice.setText(Basket.getContent().get(i).getPrice());
+            updatedWallPrice.setPrice(Basket.getContent().get(i).getPrice());
         }
 
 
@@ -47,13 +55,61 @@ public class Extra extends AppCompatActivity {
         adapter.setDropDownViewResource(R.layout.spinner_item_dropdown);
         extras.setAdapter(adapter);
 
+        Button ExtraButtonUpdatePrice = findViewById(R.id.ExtraButtonUpdatePrice);
 
-
-        Button ExtraButtonUpdateMap = findViewById(R.id.ExtraButtonUpdateMap);
-        ExtraButtonUpdateMap.setOnClickListener(new View.OnClickListener() {
+        ExtraButtonUpdatePrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("Mathias", updatedWallPrice.getPrice());
+                String price = updatedWallPrice.getPrice();
+                int priceBeforeExtra = Integer.parseInt(price);
 
+                String numberOfPanels = antalAkustikpaneler.getText().toString();
+                if (numberOfPanels.equals("")) {
+                    numberOfPanels = "0";
+                    Log.d("Mathias1", "Akustikpaneler bliver sat til 0");
+                }
+
+                String numberOfSatinGlass = antalSatinglas.getText().toString();
+                if (numberOfSatinGlass.equals("")) {
+                    numberOfSatinGlass = "0";
+                    Log.d("Mathias1", "Satinglass bliver sat til 0");
+                }
+
+                String numberOfWetRoom = antalVådrum.getText().toString();
+                if (numberOfWetRoom.equals("")){
+                    numberOfWetRoom = "0";
+                    Log.d("Mathias1", " Wetroom bliver sat til 0");
+                }
+
+                String numberOfSoundGlass = antalLydglas.getText().toString();
+                if (numberOfSoundGlass.equals("")){
+                    numberOfSoundGlass = "0";
+                    Log.d("Mathias1", "Soundglass bliver sat til 0");
+                }
+
+                int numberOfPanelsInt = Integer.parseInt(numberOfPanels);
+                int costOfPanels = numberOfPanelsInt * 318;
+
+                int numberOfSatinGlassInt = Integer.parseInt(numberOfSatinGlass);
+                int costOfSatinGlass = numberOfSatinGlassInt * 70;
+
+                int numberOfWetRoomInt = Integer.parseInt(numberOfWetRoom);
+                int costOfWetRoom = numberOfWetRoomInt * 480;
+
+                int numberOfSoundGlassInt = Integer.parseInt(numberOfSoundGlass);
+                int costOfSoundGlass = numberOfSoundGlassInt * 95;
+
+                int totalCost = priceBeforeExtra + costOfPanels + costOfSatinGlass +costOfWetRoom + costOfSoundGlass;
+
+                //updatedWallPrice.setPrice(String.valueOf(totalCost));
+
+                for (int i = 0; i < Basket.getContent().size(); i++) {
+                   Basket.getContent().get(i).setPrice((totalCost) + " kr");
+
+                }
+
+                extraPrice.setText((totalCost) + " kr");
 
             }
         });
@@ -69,5 +125,9 @@ public class Extra extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    public void PriceOfAcoustic(int extraprice,int priceTotal){
+
+
     }
 }
