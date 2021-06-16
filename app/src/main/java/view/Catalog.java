@@ -79,7 +79,6 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
                 ChosenWall.putExtra("Width", "100");
                 ChosenWall.putExtra("Height", "220");
                 ChosenWall.putExtra("WallName","2Fag M/6 Glas");
-                ChosenWall.putExtra("Price","7390 ");
                 ChosenWall.putExtra("Price","7390");
 
                 startActivity(ChosenWall);
@@ -151,8 +150,8 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
 
                 startActivity(ChosenWall);
                 break;
-
-
+                
+                
         }
     }
 }
