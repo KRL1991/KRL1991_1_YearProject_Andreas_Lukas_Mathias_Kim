@@ -102,10 +102,15 @@ public class Extra extends AppCompatActivity {
 
                 int totalCost = priceBeforeExtra + costOfPanels + costOfSatinGlass +costOfWetRoom + costOfSoundGlass;
 
-                //updatedWallPrice.setPrice(String.valueOf(totalCost));
+
 
                 for (int i = 0; i < Basket.getContent().size(); i++) {
                    Basket.getContent().get(i).setPrice((totalCost) + " kr");
+                   Basket.getContent().get(i).setAcoutsicPanel(String.valueOf(numberOfPanelsInt));
+                   Basket.getContent().get(i).setSatinGlass(String.valueOf(numberOfSatinGlassInt));
+                   Basket.getContent().get(i).setWetRoom(String.valueOf(numberOfWetRoomInt));
+                   Basket.getContent().get(i).setSoundGlass(String.valueOf(numberOfSoundGlassInt));
+
 
                 }
 
@@ -125,9 +130,5 @@ public class Extra extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    public void PriceOfAcoustic(int extraprice,int priceTotal){
-
-
     }
 }
