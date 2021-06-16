@@ -7,20 +7,6 @@
     android:background="#000000"
     tools:context="view.ContactUS">
 
-    <TextView
-        android:id="@+id/textViewContactUs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kontakt os"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
-
     <ImageView
         android:id="@+id/ImageViewLogo"
         android:layout_width="wrap_content"
@@ -34,15 +20,13 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="195dp"
-        android:layout_height="257dp"
+        android:layout_width="243dp"
+        android:layout_height="289dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472"
-        app:srcCompat="@drawable/man" />
+        app:srcCompat="@drawable/kontaktosimage" />
 
     <TextView
         android:id="@+id/ContactUsTextViewEmail"
@@ -54,10 +38,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintVertical_bias="0.852" />
 
     <TextView
         android:id="@+id/ContactUsTextViewPhone"
@@ -72,5 +56,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.775" />
 </androidx.constraintlayout.widget.ConstraintLayout>
