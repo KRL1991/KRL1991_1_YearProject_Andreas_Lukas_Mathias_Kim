@@ -50,6 +50,14 @@ public class StartScreen extends AppCompatActivity {
         }
     });
 
+    Button button3 = (Button) findViewById(R.id.btnContactUs);
+    button3.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(StartScreen.this,ContactUS.class));
+        }
+    });
+
     }
 }
 /*

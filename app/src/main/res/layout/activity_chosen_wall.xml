@@ -70,9 +70,10 @@
 
     <EditText
         android:id="@+id/ChosenWallNameWallEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
         android:layout_marginBottom="28dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
@@ -80,10 +81,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.601" />
 
     <TextView
         android:id="@+id/textViewName"
@@ -104,6 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:gravity="center"
         android:inputType="numberDecimal"
@@ -135,6 +137,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:gravity="center"
         android:inputType="numberDecimal"
