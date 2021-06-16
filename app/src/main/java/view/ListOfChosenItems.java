@@ -49,6 +49,7 @@ public class ListOfChosenItems extends AppCompatActivity {
             String soundGlassData = Basket.getContent().get(i).getSoundGlass();
             double heightDataDouble = Integer.parseInt(heightData);
             double widthDataDouble = Integer.parseInt(widthData);
+            String frameColor = Basket.getContent().get(i).getFrameColor();
             double glassSizeHeightInt = (heightDataDouble/60);
             int actualGlassHeight = (int) (heightDataDouble/glassSizeHeightInt);
             double glassSizeWidthInt = (widthDataDouble/45);
@@ -76,7 +77,9 @@ public class ListOfChosenItems extends AppCompatActivity {
                     .append(" , vådrum: ")
                     .append(wetRoomData)
                     .append(" , lydglas: ")
-                    .append(soundGlassData);
+                    .append(soundGlassData)
+                    .append(", farve: ")
+                    .append(frameColor);
 
 
 

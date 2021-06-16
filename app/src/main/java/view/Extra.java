@@ -102,6 +102,8 @@ public class Extra extends AppCompatActivity {
 
                 int totalCost = priceBeforeExtra + costOfPanels + costOfSatinGlass +costOfWetRoom + costOfSoundGlass;
 
+                String frameColor = extras.getSelectedItem().toString();
+
 
 
                 for (int i = 0; i < Basket.getContent().size(); i++) {
@@ -110,6 +112,7 @@ public class Extra extends AppCompatActivity {
                    Basket.getContent().get(i).setSatinGlass(String.valueOf(numberOfSatinGlassInt));
                    Basket.getContent().get(i).setWetRoom(String.valueOf(numberOfWetRoomInt));
                    Basket.getContent().get(i).setSoundGlass(String.valueOf(numberOfSoundGlassInt));
+                   Basket.getContent().get(i).setFrameColor(frameColor);
 
 
                 }

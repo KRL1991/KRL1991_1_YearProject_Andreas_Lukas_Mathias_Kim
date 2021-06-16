@@ -88,22 +88,22 @@ public class InfoSite extends AppCompatActivity {
                 //Her er et forloop som går igennem vores Basket(klasse).content(array)
                // og henter data fra vores Basket ,som indeholder et array, som har type Wall.
 
-            for (int i1 = 0; i1 < Basket.getContent().size() ; i1++) {
+            for (int i = 0; i < Basket.getContent().size() ; i++) {
 
                 //Her logges om denne handling rent faktisk sker -
                 // dette kan man se ved hjælp af Logcat terminalen.
-                Log.d("Kim", Basket.getContent().get(i1).getWallName());
+                Log.d("Kim", Basket.getContent().get(i).getWallName());
 
                 //Her hentes data fra content arraylisten.
-                String wallName = Basket.getContent().get(i1).getWallName();
-                String priceData = Basket.getContent().get(i1).getPrice();
-                String heightData = Basket.getContent().get(i1).getHeight();
-                String widthData = Basket.getContent().get(i1).getWidth();
-                String acousticPanel = Basket.getContent().get(i1).getAcoutsicPanel();
-                String satinGlass = Basket.getContent().get(i1).getSatinGlass();
-                String wetRoom = Basket.getContent().get(i1).getWetRoom();
-                String soundGlass = Basket.getContent().get(i1).getSoundGlass();
-                String frameColor = Basket.getContent().get(i1).getFrameColor();
+                String wallName = Basket.getContent().get(i).getWallName();
+                String priceData = Basket.getContent().get(i).getPrice();
+                String heightData = Basket.getContent().get(i).getHeight();
+                String widthData = Basket.getContent().get(i).getWidth();
+                String acousticPanel = Basket.getContent().get(i).getAcoutsicPanel();
+                String satinGlass = Basket.getContent().get(i).getSatinGlass();
+                String wetRoom = Basket.getContent().get(i).getWetRoom();
+                String soundGlass = Basket.getContent().get(i).getSoundGlass();
+                String frameColor = Basket.getContent().get(i).getFrameColor();
 
                         //Her appendes dataen som er blevet hentet fra arrayet.
                         email.append(wallName)
