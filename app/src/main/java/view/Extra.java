@@ -40,16 +40,13 @@ public class Extra extends AppCompatActivity {
         EditText antalLydglas = findViewById(R.id.ExtraEditTextLydglas);
         Button ExtraButtonUpdatePrice = findViewById(R.id.ExtraButtonUpdatePrice);
 
-        //Ny instans af Wall klassen.
-        Wall updatedWallPrice = new Wall();
+        Intent intent = getIntent();
+        Wall wall = (Wall)intent.getSerializableExtra("væg");
 
-        //Fori loop som opdatere extraPrice Textviewet og opdatere prisen inde i Arraylistet Som ligger inde i Basket klassen
-       for (int i = 0; i < Basket.getContent().size(); i++) {
-            extraPrice.setText(Basket.getContent().get(i).getPrice());
-            updatedWallPrice.setPrice(Basket.getContent().get(i).getPrice());
-        }
+            extraPrice.setText(wall.getPrice());
 
-        /*Her laver vi en spinner som indeholder et arrayet som hedder items
+
+        /*Her laver vi en spinner som indeholder et array som hedder items
                vi forbinder spinneren og arrayet ved hjælp af adapteren.
                SetDropDownViewResource skifter udseendet på spinneren når er åben.*/
         Spinner extras = findViewById(R.id.spinnerExtra);
@@ -64,9 +61,9 @@ public class Extra extends AppCompatActivity {
         ExtraButtonUpdatePrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Jeg bruger Log.d for at finde ud af hvad der er inde iupdatedWallPrice
-                Log.d("Mathias", updatedWallPrice.getPrice());
-                String price = updatedWallPrice.getPrice();
+                //Vi bruger Log.d for at finde ud af hvad der er inde iupdatedWallPrice
+                 Log.d("Mathias", wall.getPrice());
+                String price = wall.getPrice();
                 int priceBeforeExtra = Integer.parseInt(price);
 
                 /* hvis brugeren ikke skriver noget i akustikplanelet tekst feltet
@@ -95,38 +92,36 @@ public class Extra extends AppCompatActivity {
                     Log.d("Mathias1", "Soundglass bliver sat til 0");
                 }
 
-                //Prisen af tilægene bliver udregnet
+                //Prisen af tillægene bliver udregnet
                 int numberOfPanelsInt = Integer.parseInt(numberOfPanels);
                 int costOfPanels = numberOfPanelsInt * 318;
-
+                wall.setAcoutsicPanel(String.valueOf(numberOfPanelsInt));
 
                 int numberOfSatinGlassInt = Integer.parseInt(numberOfSatinGlass);
                 int costOfSatinGlass = numberOfSatinGlassInt * 70;
+                wall.setSatinGlass(String.valueOf(numberOfSatinGlassInt));
 
                 int numberOfWetRoomInt = Integer.parseInt(numberOfWetRoom);
                 int costOfWetRoom = numberOfWetRoomInt * 480;
+                wall.setWetRoom(String.valueOf(numberOfWetRoomInt));
 
                 int numberOfSoundGlassInt = Integer.parseInt(numberOfSoundGlass);
                 int costOfSoundGlass = numberOfSoundGlassInt * 95;
+                wall.setSoundGlass(String.valueOf(numberOfSoundGlassInt));
 
                 // Alle tillæg og væggens pris bliver lagt sammen
-                int totalCost = priceBeforeExtra + costOfPanels + costOfSatinGlass +costOfWetRoom + costOfSoundGlass;
+                int totalCost = costOfPanels + costOfSatinGlass +costOfWetRoom + costOfSoundGlass+ priceBeforeExtra;
 
                 String frameColor = extras.getSelectedItem().toString();
+                wall.setFrameColor(frameColor);
 
 
                 // Den valgte væg får opdateret tilføjet de valgte tillæg
-                for (int i = 0; i < Basket.getContent().size(); i++) {
-                   Basket.getContent().get(i).setPrice((totalCost) + " kr");
-                   Basket.getContent().get(i).setAcoutsicPanel(String.valueOf(numberOfPanelsInt));
-                   Basket.getContent().get(i).setSatinGlass(String.valueOf(numberOfSatinGlassInt));
-                   Basket.getContent().get(i).setWetRoom(String.valueOf(numberOfWetRoomInt));
-                   Basket.getContent().get(i).setSoundGlass(String.valueOf(numberOfSoundGlassInt));
-
-                   Basket.getContent().get(i).setFrameColor(frameColor);
 
 
-                }
+                   Basket.getContent().add(wall);
+
+
                 //Viser den nye pris
                 extraPrice.setText((totalCost) + " kr");
 
@@ -138,7 +133,7 @@ public class Extra extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Extra.this,ListOfChosenItems.class);
-
+                intent.putExtra("væg",wall);
 
 
                 startActivity(intent);

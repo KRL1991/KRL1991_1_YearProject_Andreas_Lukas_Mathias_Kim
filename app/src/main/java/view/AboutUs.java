@@ -6,12 +6,9 @@ import android.os.Bundle;
 
 import com.example.x1_year_project.R;
 
-public class AboutUs extends AppCompatActivity {
-    /*
-    Written by Andreas Ravn
-    Opens "om os" xml activity.
-    being called from MainActivity button2.
-     */
+public class AboutUs extends AppCompatActivity { //Andreas
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

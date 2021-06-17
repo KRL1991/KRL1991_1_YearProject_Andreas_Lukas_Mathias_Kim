@@ -74,7 +74,7 @@ public class InfoSite extends AppCompatActivity {
                 String emptyString = "";
                 String fullString = "";
 
-                //Her laves stringbuilder et nyt stringbuilder objekt
+                //Her laves et stringbuilder objekt kaldet email
                // som bruger empty string til at "store" den string den laver.
                 StringBuilder email = new StringBuilder(emptyString);
 

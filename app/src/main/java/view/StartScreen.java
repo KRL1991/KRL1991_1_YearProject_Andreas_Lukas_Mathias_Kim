@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.x1_year_project.R;
 
 
-public class StartScreen extends AppCompatActivity {
+public class StartScreen extends AppCompatActivity { // Andreas og Kim
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +18,9 @@ public class StartScreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        /*
-        Written by Andreas Ravn
-           Starts by making the Button connect with the id of button "Katalog" which is btncatalog.
-           Then makes it so when clicked upon it connects with "Catalog.java" which opens the xml-file.
-           Intent is used to go to a new Activity.
-           All 3 areas is doing the same just for 3 different buttons.
-        */
-
+     /* Her laver vi en knap som har id'et btncatalog som vil føre os hen til kataloget.
+       Vi sætter en OnClickListener på knappen hvilket vil sige at når knappen bliver
+       trykket vil koden i onClick metoden blive kørt*/
     Button button = (Button) findViewById(R.id.btncatalog);
     button.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -60,7 +55,8 @@ public class StartScreen extends AppCompatActivity {
 
     }
 }
-/*
+
+/* Man kan også skrive intent på denne måde
 - Andreas Ravn
 Alternetive code:
     public void onClick(View v) {

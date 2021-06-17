@@ -1,6 +1,8 @@
 package model;
 
-public class Wall {
+import java.io.Serializable;
+
+public class Wall implements Serializable {
 
 
     String wallName;

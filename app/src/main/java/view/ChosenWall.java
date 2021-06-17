@@ -20,32 +20,26 @@ import model.Basket;
 import model.Wall;
 import model.WallPriceList;
 
-public class ChosenWall extends AppCompatActivity {
+public class ChosenWall extends AppCompatActivity {//Kim, Andreas og Mathias
 
-    //Written by Kim and Andreas
-
+     Wall selectedWall = new Wall();
+    // EditText, TextView og ImageView variabler bliver oprettet
     EditText ChosenWallHeightEditText, ChosenWallWidthEditText,ChosenWallNameWallEditText;
-
     TextView ChosenWallPriceTextView;
-
     ImageView imageViewPicture;
     ImageView imageViewName;
     ImageView imageViewMeasure;
 
+    //Her opretter vi et bundle, vi bruger bundlet til og få information fra Catalog activitets.
     Bundle bundle;
 
+    //Her laver vi et WallHeightOverThresholdException objekt.
     WallHeightOverThresholdException wallHeightOverThresholdException =
             new WallHeightOverThresholdException("Højde skal være under 251 cm");
 
+    //Her laver vi et WallWidthUnderThresholdException objekt.
     WallWidthUnderThresholdException wallWidthUnderThresholdException =
             new WallWidthUnderThresholdException("Bredde skal være over 10 cm");
-
- /*   Context context = getApplicationContext();
-    CharSequence text = "Fejl, Højde skal være under 251 cm";
-    int duration = Toast.LENGTH_SHORT;
-
-    Toast toast = Toast.makeText(context, text, duration);*/
-
 
 
     @Override
@@ -55,6 +49,7 @@ public class ChosenWall extends AppCompatActivity {
 
         Button goToPrice = findViewById(R.id.ChosenWallButton);
 
+        //Her forbinder vi variablerne med felterne fra xml filen
         ChosenWallHeightEditText = (EditText) findViewById(R.id.ChosenWallHeightEditText);
         ChosenWallWidthEditText = (EditText) findViewById(R.id.ChosenWallWidthEditText);
         ChosenWallNameWallEditText = (EditText) findViewById(R.id.ChosenWallNameWallEditText);
@@ -63,10 +58,8 @@ public class ChosenWall extends AppCompatActivity {
         imageViewMeasure = (ImageView) findViewById(R.id.imageViewMeasure);
         imageViewName = (ImageView) findViewById(R.id.imageViewName);
 
-        //Kim
-        //Clears the EditTextview when doubleclicked.
 
-
+        // Her sætter vi en SetOnFocusChangeListener på ChosenWallHeightEditText som fjerner hvad der står i tekst feltet
         ChosenWallHeightEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -90,10 +83,11 @@ public class ChosenWall extends AppCompatActivity {
            }
        });
 
-
-//Andreas - data from catalog to ChosenWall
+        //Andreas
+        //Bundlet får informationen som blev givet fra kataloget
         bundle = getIntent().getExtras();
 
+        //Hvis if statementen er true så ville bundlets data blive sat i String variabler, de variabler bruges i setUp metoden
         if (bundle != null) {
             String name = bundle.getString("name");
             String height = bundle.getString("Height");
@@ -105,46 +99,49 @@ public class ChosenWall extends AppCompatActivity {
         }
 
         //Kim and Mathias
+        //Vi laver en SetOnClickListener på goToPrice knappen, alt det som står i onClick metoden ville blive kørt, når knappen bliver trykket på
         goToPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 //Her laves et nyt objekt af Wall. Værdierne bliver her sat ud fra tekstfelterne.
-                Wall selectedWall = new Wall();
+
                 selectedWall.setWallName(ChosenWallNameWallEditText.getText().toString());
                 selectedWall.setHeight(ChosenWallHeightEditText.getText().toString());
                 selectedWall.setWidth(ChosenWallWidthEditText.getText().toString());
                 selectedWall.setPrice(ChosenWallPriceTextView.getText().toString());
-                //Tilføjer den valgte væg til kurven.
-                Basket.getContent().add(selectedWall);
+
 
                 //Exception for wallOverthreshold som bliver kastet når den indtastede højde er over 251 cm
 
                 try {
-                  if (Integer.parseInt(selectedWall.getHeight()) >  251) {
+                  if (Integer.parseInt(selectedWall.getHeight()) >=  251) {
                       throw wallHeightOverThresholdException;
                   }
 
 
                } catch (WallHeightOverThresholdException e) {
+                    //Her laves en toast som viser brugeren en fejlmeddelse
                     Toast.makeText(getApplicationContext(),"Højde må max være 250 cm",Toast.LENGTH_SHORT).show();
 
 
                }
+
                 //Exception for WallWidthUnderThreshold som bliver kastet når den indtastede bredde er under 9 cm
                try {
-                    if (Integer.parseInt(selectedWall.getWidth()) < 9){
+                    if (Integer.parseInt(selectedWall.getWidth()) <= 9){
                     throw wallWidthUnderThresholdException;
                     }
 
                 } catch (WallWidthUnderThresholdException e) {
+                   //Her laves en toast som viser brugeren en fejlmeddelse
                     Toast.makeText(getApplicationContext(),"Bredde skal være over 10 cm",Toast.LENGTH_SHORT).show();
 
 
                 }
-
+                //Ny intent som tager os videre til Extra aktiviteten
                 Intent intent = new Intent(ChosenWall.this, Extra.class);
-
+                intent.putExtra("væg",selectedWall);
                 startActivity(intent);
             }
         });
@@ -152,8 +149,11 @@ public class ChosenWall extends AppCompatActivity {
 
 
     }
-
+    //Andreas
+    //Her laver vi en privat metode som har 5 parameter.
     private void setUp(String name, String height, String width, String wallName, String price) {
+
+        //Her laver vi en if sætning som sætter værdierne for den valgte væg ud fra keyen "name". Som vi får fra bundlet
         if (name.equals("picture1")) {
 
             imageViewPicture.setImageResource(R.drawable.picturenew1);
