@@ -49,6 +49,7 @@ public class ListOfChosenItems extends AppCompatActivity {
             String soundGlassData = Basket.getContent().get(i).getSoundGlass();
             double heightDataDouble = Integer.parseInt(heightData);
             double widthDataDouble = Integer.parseInt(widthData);
+            String frameColor = Basket.getContent().get(i).getFrameColor();
             double glassSizeHeightInt = (heightDataDouble/60);
             int actualGlassHeight = (int) (heightDataDouble/glassSizeHeightInt);
             double glassSizeWidthInt = (widthDataDouble/45);
@@ -57,26 +58,31 @@ public class ListOfChosenItems extends AppCompatActivity {
 
             StringBuilder stringBuilder = new StringBuilder(string);
 
-            stringBuilder.append(wallName).append("")
-
-                    .append(", højde ")
-                    .append(heightData)
-                    .append(" cm , bredde ")
-                    .append(widthData).append(" cm , ")
-                    .append(" glashøjde ")
-                    .append(actualGlassHeight)
-                    .append(", glasbredde ")
-                    .append(actualGlassWidth)
-                    .append(" , pris: ")
-                    .append(priceData)
-                    .append(" , akustikpaneler: ")
-                    .append(acousticPanelData)
-                    .append(" , satinglas: ")
-                    .append(satinGlassData)
-                    .append(" , vådrum: ")
-                    .append(wetRoomData)
-                    .append(" , lydglas: ")
-                    .append(soundGlassData);
+            stringBuilder
+                    .append("Navn: ")
+                    .append(wallName + "\n")
+                    .append("Højde: ")
+                    .append(heightData + " cm\n")
+                    .append("Bredde: ")
+                    .append(widthData + " cm\n")
+                    .append("Glashøjde: ")
+                    .append(actualGlassHeight + " cm\n")
+                    .append("Glasbredde: ")
+                    .append(actualGlassWidth + " cm\n")
+                    .append("Pris: ")
+                    .append(priceData + " kr\n\n")
+                    .append("Ekstra: \n")
+                    .append("Akustikpaneler: ")
+                    .append(acousticPanelData +"\n")
+                    .append("Satinglas: ")
+                    .append(satinGlassData + "\n")
+                    .append("Vådrum: ")
+                    .append(wetRoomData + "\n")
+                    .append("Lydglas: ")
+                    .append(soundGlassData + "\n")
+                    .append("Farve: ")
+                    .append(frameColor)
+                    .append("\n\n");
 
 
 

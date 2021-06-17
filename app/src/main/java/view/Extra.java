@@ -112,6 +112,8 @@ public class Extra extends AppCompatActivity {
                 // Alle tillæg og væggens pris bliver lagt sammen
                 int totalCost = priceBeforeExtra + costOfPanels + costOfSatinGlass +costOfWetRoom + costOfSoundGlass;
 
+                String frameColor = extras.getSelectedItem().toString();
+
 
                 // Den valgte væg får opdateret tilføjet de valgte tillæg
                 for (int i = 0; i < Basket.getContent().size(); i++) {
@@ -120,6 +122,10 @@ public class Extra extends AppCompatActivity {
                    Basket.getContent().get(i).setSatinGlass(String.valueOf(numberOfSatinGlassInt));
                    Basket.getContent().get(i).setWetRoom(String.valueOf(numberOfWetRoomInt));
                    Basket.getContent().get(i).setSoundGlass(String.valueOf(numberOfSoundGlassInt));
+
+                   Basket.getContent().get(i).setFrameColor(frameColor);
+
+
                 }
                 //Viser den nye pris
                 extraPrice.setText((totalCost) + " kr");
