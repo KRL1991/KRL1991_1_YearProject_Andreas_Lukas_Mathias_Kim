@@ -106,14 +106,11 @@ public class InfoSite extends AppCompatActivity {
                 String frameColor = Basket.getContent().get(i).getFrameColor();
 
                         //Her appendes dataen som er blevet hentet fra arrayet.
-                        email.append(wallName)
-                        .append(", ")
-                        .append(priceData)
-                        .append(", ")
-                        .append(heightData)
-                        .append(" cm, ")
-                        .append(widthData)
-                        .append(" cm\n")
+                        email
+                                .append("Navn: " + wallName + "\n")
+                                .append("Pris: " + priceData + " kr" + "\n")
+                                .append("Højde: " + heightData + " cm" + "\n")
+                                .append("Bredde: " + widthData + " cm" + "\n\n")
                                 .append("Ekstra:\n")
                                 .append(" Antal Akustikpaneler: "+acousticPanel +"\n")
                                 .append(" Antal Satin glas: "+satinGlass +"\n")
