@@ -18,7 +18,7 @@ import model.Basket;
 
 public class ListOfChosenItems extends AppCompatActivity {
 
-    //Written by Kim
+    //Written by Kim og Mathias
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
