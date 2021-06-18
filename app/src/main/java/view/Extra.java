@@ -39,6 +39,7 @@ public class Extra extends AppCompatActivity {
         EditText antalVådrum = findViewById(R.id.ExtraEditTextVådrum);
         EditText antalLydglas = findViewById(R.id.ExtraEditTextLydglas);
         Button ExtraButtonUpdatePrice = findViewById(R.id.ExtraButtonUpdatePrice);
+        TextView krTextView = findViewById(R.id.KrTextView);
 
         //Ny instans af Wall klassen.
         Wall updatedWallPrice = new Wall();
@@ -129,6 +130,9 @@ public class Extra extends AppCompatActivity {
                 }
                 //Viser den nye pris
                 extraPrice.setText((totalCost) + " kr");
+
+                krTextView.setText("");
+
 
             }
         });
