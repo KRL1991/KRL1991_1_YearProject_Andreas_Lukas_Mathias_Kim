@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.example.x1_year_project.R;
 
-public class Catalog extends AppCompatActivity implements View.OnClickListener {   // Andreas
+public class Catalog extends AppCompatActivity implements View.OnClickListener {   // Andreas og Mathias
 
 
     // her laves billederne om til ImageView variabler
@@ -21,7 +21,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalog);
-
+        //Mathias
         // her sætter vi billederne sammen med Imageviews og deres tilsvarende id'er fra catalog.xml.
         fag1_glas4 = (ImageView) findViewById(R.id.fag1med4glas);
         fag2_glas8 = (ImageView) findViewById(R.id.fag2med8glas);
@@ -34,7 +34,7 @@ public class Catalog extends AppCompatActivity implements View.OnClickListener {
         fag5_glas20_med_enkledor = (ImageView) findViewById(R.id.fag5med20glas_enkeldor);
         fag6_glas24_med_enkledor = (ImageView) findViewById(R.id.fag6med24glass_enkeldor);
 
-
+        //Andreas
         //Her sættes en onClickListener på billedet, this er et tilbagekald til implements View.OnClickListener
         fag1_glas4.setOnClickListener(this);
         fag2_glas6.setOnClickListener(this);

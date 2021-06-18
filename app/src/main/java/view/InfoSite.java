@@ -25,7 +25,7 @@ import model.Basket;
 import model.EmailContent;
 import model.SendEmail;
 
-public class InfoSite extends AppCompatActivity {
+public class InfoSite extends AppCompatActivity { //Kim,Lukas og Mathias
 
     EditText navn, telefon, userEmail, kommentar;
 

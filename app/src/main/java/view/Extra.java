@@ -25,7 +25,7 @@ public class Extra extends AppCompatActivity {
     int soundGlass = 95;
 
 
-    // Mathias og Kim
+    // Kim, lukas og Mathias
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
