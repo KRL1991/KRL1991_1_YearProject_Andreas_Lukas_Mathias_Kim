@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.x1_year_project.R;
 
-public class ContactUS extends AppCompatActivity {
+public class ContactUS extends AppCompatActivity { //Kim
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
