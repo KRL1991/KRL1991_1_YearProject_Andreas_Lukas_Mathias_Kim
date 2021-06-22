@@ -20,7 +20,7 @@ public class WallMockTest {
 
 
     }
-
+// Tjekker om exception smides hvis højden overstiger eller er 251 = -  så testen "fejler" egentlig.
     @Test
     public void wallTooHigh() {
 
@@ -34,9 +34,9 @@ public class WallMockTest {
 
     private void assertThrows(WallHeightOverThresholdException wallTooHigh, int expected) {
 
-        if (expected > 251) throw wallTooHigh;
+        if (expected >= 251) throw wallTooHigh;
     }
-
+// Tjekker om exception wallTooSmall bliver kastet hvis højden er under eller = 9 - så
     @Test
     public void wallTooSmall() {
 
@@ -51,7 +51,7 @@ public class WallMockTest {
 
     private void assertThrows(WallHeightUnderThresholdException wallTooSmall, int expected) {
 
-        if (expected < 9) throw wallTooSmall;
+        if (expected <= 9) throw wallTooSmall;
 
 
     }
