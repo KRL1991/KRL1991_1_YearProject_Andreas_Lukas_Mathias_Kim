@@ -7,7 +7,7 @@ import exceptions.WallHeightUnderThresholdException;
 
 import static org.junit.Assert.*;
 
-public class WallMockTest {
+public class WallMockTest { // Kim Tests
 
     @Test
     public void getHeight() {

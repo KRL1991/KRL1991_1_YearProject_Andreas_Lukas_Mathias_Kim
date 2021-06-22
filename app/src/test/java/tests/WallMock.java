@@ -3,7 +3,7 @@ package tests;
 import exceptions.WallHeightOverThresholdException;
 import exceptions.WallHeightUnderThresholdException;
 
-public class WallMock  {
+public class WallMock  { // Kim Tests
 
     int height;
 
