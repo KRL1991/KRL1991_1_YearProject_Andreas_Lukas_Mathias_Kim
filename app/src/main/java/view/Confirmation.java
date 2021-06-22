@@ -11,8 +11,9 @@ import android.widget.ListView;
 import com.example.x1_year_project.R;
 
 import model.Basket;
+import model.EmailContent;
 
-public class Confirmation extends AppCompatActivity {
+public class Confirmation extends AppCompatActivity { //Kim
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class Confirmation extends AppCompatActivity {
                 startActivity(intent);
 
                 Basket.getContent().clear();
+                EmailContent.getContent().clear();
+
 
 
             }

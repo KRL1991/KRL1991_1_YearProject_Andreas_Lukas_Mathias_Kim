@@ -1,5 +1,25 @@
 # First Year Project
 
+This is an exam project.
+We were handed an assignment were we had to develop an application for a company called New-Yorker.dk.
+The application should facilitate an enquiry on one or more of their products from their catalog and send the enquiry via email to the company.
+The application is method for us to show our programming knowledge at this point in the course.
+
+Here are some images of the application:
+
+![image](https://user-images.githubusercontent.com/70881764/121570696-65c46280-ca22-11eb-89a0-3094818535ad.png)
+![image](https://user-images.githubusercontent.com/70881764/121570778-7bd22300-ca22-11eb-8b56-41bce8cf3138.png)
+![image](https://user-images.githubusercontent.com/70881764/121570921-a91ed100-ca22-11eb-9e99-b17971f91486.png)
+![image](https://user-images.githubusercontent.com/70881764/121571000-c5227280-ca22-11eb-9ab5-61465d955e6d.png)
+![image](https://user-images.githubusercontent.com/70881764/121571804-c0aa8980-ca23-11eb-94cd-ad75911045eb.png)
+![image](https://user-images.githubusercontent.com/70881764/121571892-dddf5800-ca23-11eb-81bc-96f7872083b3.png)
+
+
+
+
+
+Here is a content section for our artifacts and other files
+
 <details><summary><strong>01 Business Modeling</strong></summary> <p>
   
 Contains artifacts related to business analysis:
@@ -54,7 +74,7 @@ Contains artifacts explaining the analysis structure of the project:
  Contains artifacts explaining the design structure of the project:
 
 - Operation Contracts
-  Format: Visio
+  Format: Docs
   
 - System Diagram
   Format: Visio
@@ -77,37 +97,19 @@ Contain the program implementation of the product:
 </p>
 </details>
 
-<details><summary><strong>06 Test</strong></summary> <p>
-  
-Contain artifacts related to product tests:
-  
-- Review checklists
-- Test-code
-- Test-cases/TestData
-- Test-Log
+
+
   
 </p> 
 </details>
 
-<details><summary><strong>07 Deployment</strong></summary> <p>
-  
-Contains documents related to the deployment: 
-
-- Release notes
-- User manual (Support)
-- Guide for app usage
 
 
 </p>
 </details>
 
 
-<details><summary><strong>08 Configuration & CM</strong></summary> <p>
-  
-Contains Configuration & CM artifacts: 
 
-- Configuration management plan
-- Change requests 
 
 </p>
 </details>
