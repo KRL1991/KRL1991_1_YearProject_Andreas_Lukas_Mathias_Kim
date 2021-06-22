@@ -7,7 +7,7 @@ public class WallMock  { // Kim Tests
 
     int height;
 
-    WallHeightOverThresholdException wallTooHigh = new WallHeightOverThresholdException("Error: Wall must be under 250");
+    WallHeightOverThresholdException wallTooHigh = new WallHeightOverThresholdException("Error: Wall must be 250 cm or under");
 
     public WallHeightUnderThresholdException getWallTooSmall() {
         return wallTooSmall;
@@ -17,7 +17,7 @@ public class WallMock  { // Kim Tests
         this.wallTooSmall = wallTooSmall;
     }
 
-    WallHeightUnderThresholdException wallTooSmall = new WallHeightUnderThresholdException("Error: Wall must be over 10");
+    WallHeightUnderThresholdException wallTooSmall = new WallHeightUnderThresholdException("Error: Wall must be 10 cm or over");
 
 
     public WallMock(int height) {
