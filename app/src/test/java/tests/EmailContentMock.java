@@ -3,7 +3,7 @@ package tests;
 import exceptions.EmailMissingATSignException;
 import exceptions.PhoneNumberNonNumericException;
 
-public class EmailContentMock {
+public class EmailContentMock { //Mathias
 
     String telefonnummer = "12345678";
 

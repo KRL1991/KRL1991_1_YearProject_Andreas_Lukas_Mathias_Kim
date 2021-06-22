@@ -6,7 +6,7 @@ import exceptions.PhoneNumberNonNumericException;
 
 import static org.junit.Assert.*;
 
-public class EmailContentMockTest {
+public class EmailContentMockTest {//Mathias
 
     @Test
     public void getPhoneNumberNonNumericException() {
