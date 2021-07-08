@@ -134,7 +134,7 @@ public class InfoSite extends AppCompatActivity { //Kim,Lukas og Mathias
             //intent.putExtra(Intent.EXTRA_TEXT definere hvad der skal være i teksten af emailen.
             // startActivity(Intent.createChooser(intent,"Send Email")) Denne intent åbner for valg af email.
             Intent intent = new Intent(Intent.ACTION_SENDTO);
-            intent.putExtra(Intent.EXTRA_EMAIL,new String[]{("kimx4706@edu.easj.dk")});
+            intent.putExtra(Intent.EXTRA_EMAIL,new String[]{("")});
             intent.setType("message/rfc822");
             intent.setData(Uri.parse("mailto:"));
             intent.putExtra(Intent.EXTRA_SUBJECT, "Forespørgsel på New-Yorker væg");
